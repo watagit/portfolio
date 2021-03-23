@@ -1,7 +1,8 @@
-import React, { FC } from "react";
+import { NextPage } from "next";
+import React from "react";
 
-const Index: FC = () => {
-  return <div>portfolio</div>;
+const Index: NextPage = () => {
+  return <></>;
 };
 
 export default Index;
