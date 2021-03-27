@@ -26,9 +26,9 @@ type Educations  []Education
 type Skills      []Skill
 
 type Response struct {
-  Name        string       `json:"name"`
-  Biography   string       `json:"biography"`
-  TwitterID   string       `json:"twitter_id"`
+  Name        string      `json:"name"`
+  Biography   string      `json:"biography"`
+  TwitterID   string      `json:"twitter_id"`
   Experiences Experiences `json:"experiences"`
   Educations  Educations  `json:"educations"`
   Skills      Skills      `json:"skills"`
