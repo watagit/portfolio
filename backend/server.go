@@ -22,8 +22,8 @@ type Skill struct {
 }
 
 type Experiences []Experience
-type Educations []Education
-type Skills []Skill
+type Educations  []Education
+type Skills      []Skill
 
 type Response struct {
   Name        string       `json:"name"`
