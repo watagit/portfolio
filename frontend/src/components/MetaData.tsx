@@ -1,15 +1,20 @@
-import Image from "next/image";
 import React, { FC } from "react";
+import Image from "next/image";
 
-const MetaData: FC = () => {
+interface Props {
+  name: string;
+  twitterId: string;
+}
+
+const MetaData: FC<Props> = ({ name, twitterId }) => {
   return (
-    <>
-      <Image src={"/avatar.jpg"} alt={"avatar"} width={"100"} height={"100"} />
+    <div className={"flex justify-center"}>
+      <Image className={"rounded-full"} src={"/avatar.jpg"} alt={"avatar"} width={"100"} height={"100"} />
       <div>
-        <h1>小野 航</h1>
-        <p>@what_a_pon</p>
+        <h1>{name}</h1>
+        <p>{twitterId}</p>
       </div>
-    </>
+    </div>
   );
 };
 
