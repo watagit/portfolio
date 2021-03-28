@@ -3,6 +3,10 @@ import React from "react";
 
 import MetaData from "../components/MetaData";
 import Section from "../components/Section";
+import Period from "../components/Period";
+import Text from "../components/Text";
+import Skill from "../components/Skill";
+import Profile from "../components/Profile";
 
 interface MetaData {
   name: string;
@@ -41,40 +45,34 @@ const Index: NextPage<Props> = ({ meta, bio, experiences, educations, skills }) 
   return (
     <>
       <MetaData name={meta.name} twitterId={meta.twitterId} />
-      <div>{bio.content}</div>
-      <div>
-        <Section title={"Experience"}>
-          <div>
-            {experiences.map((experience: Experience, index: number) => (
-              <div key={index}>
-                {experience.period}
-                {experience.name}
-                {experience.detail}
-              </div>
-            ))}
-          </div>
-        </Section>
-        <Section title={"Education"}>
-          <div>
-            {educations.map((education: Education, index: number) => (
-              <div key={index}>
-                {education.period}
-                {education.name}
-                {education.detail}
-              </div>
-            ))}
-          </div>
-        </Section>
-        <Section title={"Skills"}>
-          <div>
-            {skills.map((skill: Skill, index: number) => (
-              <div key={index}>
-                {skill.name}
-              </div>
-            ))}
-          </div>
-        </Section>
-      </div>
+      <Profile content={bio.content} />
+      <Section title={"Experience"}>
+        <div>
+          {experiences.map((experience: Experience, index: number) => (
+            <div key={index}>
+              <Period label={experience.period} />
+              <Text title={experience.name} content={experience.detail} />
+            </div>
+          ))}
+        </div>
+      </Section>
+      <Section title={"Education"}>
+        <div>
+          {educations.map((education: Education, index: number) => (
+            <div key={index}>
+              <Period label={education.period} />
+              <Text title={education.name} content={education.detail} />
+            </div>
+          ))}
+        </div>
+      </Section>
+      <Section title={"Skills"}>
+        <div>
+          {skills.map((skill: Skill, index: number) => (
+            <Skill key={index} label={skill.name} />
+          ))}
+        </div>
+      </Section>
     </>
   );
 };
