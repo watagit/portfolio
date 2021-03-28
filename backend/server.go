@@ -3,6 +3,9 @@ package main
 import (
   "github.com/gin-gonic/gin"
   "log"
+  "net/http"
+
+  "google.golang.org/appengine"
 )
 
 type MetaData struct {
@@ -69,27 +72,29 @@ func main() {
   }
 
   r.GET("/meta", func(c *gin.Context) {
-    c.JSON(200, metaData)
+    c.JSON(http.StatusOK, metaData)
   })
 
   r.GET("/bio", func(c *gin.Context) {
-    c.JSON(200, bio)
+    c.JSON(http.StatusOK, bio)
   })
 
   r.GET("/experiences", func(c *gin.Context) {
-    c.JSON(200, experiences)
+    c.JSON(http.StatusOK, experiences)
   })
 
   r.GET("/educations", func(c *gin.Context) {
-    c.JSON(200, educations)
+    c.JSON(http.StatusOK, educations)
   })
 
   r.GET("/skills", func(c *gin.Context) {
-    c.JSON(200, skills)
+    c.JSON(http.StatusOK, skills)
   })
 
   err := r.Run(":8080")
   if err != nil {
     log.Fatal(err)
   }
+
+  appengine.Main()
 }
