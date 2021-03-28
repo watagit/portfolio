@@ -37,6 +37,14 @@ type Experiences []Experience
 type Educations  []Education
 type Skills      []Skill
 
+type Response struct {
+  MetaData    MetaData    `json:"meta_data"`
+  Bio         Biography   `json:"bio"`
+  Experiences Experiences `json:"experiences"`
+  Educations  Educations  `json:"educations"`
+  Skills      Skills      `json:"skills"`
+}
+
 func main() {
   r := gin.Default()
 
@@ -71,24 +79,16 @@ func main() {
     Skill{Name: "Python"},
   }
 
-  r.GET("/meta", func(c *gin.Context) {
-    c.JSON(http.StatusOK, metaData)
-  })
+  response := Response{
+    MetaData: metaData,
+    Bio: bio,
+    Experiences: experiences,
+    Educations: educations,
+    Skills: skills,
+  }
 
-  r.GET("/bio", func(c *gin.Context) {
-    c.JSON(http.StatusOK, bio)
-  })
-
-  r.GET("/experiences", func(c *gin.Context) {
-    c.JSON(http.StatusOK, experiences)
-  })
-
-  r.GET("/educations", func(c *gin.Context) {
-    c.JSON(http.StatusOK, educations)
-  })
-
-  r.GET("/skills", func(c *gin.Context) {
-    c.JSON(http.StatusOK, skills)
+  r.GET("/", func(c *gin.Context) {
+    c.JSON(http.StatusOK, response)
   })
 
   err := r.Run(":8080")
