@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 
-interface Props {
+export interface Props {
   title: string;
   content: string;
 }
