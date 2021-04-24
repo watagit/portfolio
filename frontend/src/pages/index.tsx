@@ -1,6 +1,6 @@
 import { NextPage } from 'next';
 
-const Index = () => {
+const Index: NextPage = () => {
   return <div>Hello</div>;
 };
 
