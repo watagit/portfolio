@@ -91,6 +91,10 @@ func main() {
     c.JSON(http.StatusOK, response)
   })
 
+  r.GET("/ping", func(c *gin.Context) {
+    c.JSON(http.StatusOK, "hello")
+  })
+
   err := r.Run(":8080")
   if err != nil {
     log.Fatal(err)
