@@ -11,7 +11,6 @@ export default {
 const Template: Story<Props> = (args) => <Work {...args} />;
 
 export const Default = Template.bind({});
-export const Array = Template.bind({});
 
 Default.args = {
   companyName: 'Crosshare, inc',
