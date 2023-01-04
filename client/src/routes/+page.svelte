@@ -2,6 +2,4 @@
 	<title>Home</title>
 </svelte:head>
 
-<section>
-	portfolio
-</section>
+<section>portfolio</section>
