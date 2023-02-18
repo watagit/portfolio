@@ -3,8 +3,7 @@ import type { Project } from "@/domain/project";
 export const projects: Array<Project> = [
   {
     id: "1",
-    thumbnailImageUrl:
-      "https://raw.githubusercontent.com/watagit/portfolio/image/easyreview.png",
+    thumbnailImageUrl: "/project/easyreview.png",
     serviceName: "Easy Review",
     description:
       "日本語話者フレンドリーかつ、初心者エンジニアフレンドリーな UI で、気軽にコードレビューを投稿できるサービスです。",
