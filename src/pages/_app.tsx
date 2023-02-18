@@ -6,7 +6,9 @@ const App = ({ Component, pageProps }: AppProps) => {
   return (
     <>
       <Header />
-      <Component {...pageProps} />
+      <main className="mx-auto w-11/12 sm:w-2/3">
+        <Component {...pageProps} />
+      </main>
     </>
   );
 };

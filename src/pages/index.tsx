@@ -1,5 +1,17 @@
-const Top = () => {
-  return <>portfolio</>;
+import type { NextPage } from "next";
+
+import { SectionWithTitle } from "@/component/ui/SectionWithTitle";
+import { ProjectList } from "@/component/model/project/ProjectList";
+import { projects } from "@/data/project";
+
+const Top: NextPage = () => {
+  return (
+    <>
+      <SectionWithTitle title="Project">
+        <ProjectList projects={projects} />
+      </SectionWithTitle>
+    </>
+  );
 };
 
 export default Top;
