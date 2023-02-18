@@ -9,7 +9,7 @@ type ProjectListProps = {
 
 export const ProjectList: FC<ProjectListProps> = ({ projects }) => {
   return (
-    <ul className="flex flex-col gap-4">
+    <ul className="flex flex-col gap-4 sm:grid sm:grid-cols-3">
       {projects.map((project) => (
         <li key={project.id}>
           <ProjectItem project={project} />

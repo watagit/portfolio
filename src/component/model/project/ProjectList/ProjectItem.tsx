@@ -9,7 +9,7 @@ type ProjectItemProps = {
 
 export const ProjectItem: FC<ProjectItemProps> = ({ project }) => {
   return (
-    <div className="rounded-lg border border-gray">
+    <div className="rounded-lg border border-gray sm:min-h-[316px]">
       <Image
         className="w-full rounded-t-lg"
         src={project.thumbnailImageUrl}
@@ -18,10 +18,12 @@ export const ProjectItem: FC<ProjectItemProps> = ({ project }) => {
         alt={`${project.serviceName}のサムネイル画像`}
       />
       <div className="flex flex-col gap-3 p-4">
-        <h3 className="text-xl font-semibold text-black">
+        <h3 className="text-xl font-semibold text-black sm:text-base sm:leading-5">
           {project.serviceName}
         </h3>
-        <p className="text-black">{project.description}</p>
+        <p className="leading-6 text-black sm:text-xs sm:leading-5">
+          {project.description}
+        </p>
       </div>
     </div>
   );
