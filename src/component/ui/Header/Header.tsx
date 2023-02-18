@@ -11,6 +11,7 @@ export const Header: FC = () => {
         <Image
           className="h-16 w-16 rounded-full"
           src={avatarImage}
+          priority
           width={100}
           height={100}
           alt="ロゴ画像"
