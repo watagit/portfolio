@@ -1,9 +1,5 @@
 const Top = () => {
-  return (
-    <>
-      portfolio
-    </>
-  )
-}
+  return <>portfolio</>;
+};
 
-export default Top
+export default Top;
