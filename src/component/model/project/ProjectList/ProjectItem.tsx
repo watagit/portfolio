@@ -11,7 +11,7 @@ export const ProjectItem: FC<ProjectItemProps> = ({ project }) => {
   return (
     <div className="rounded-lg border border-gray">
       <Image
-        className="w-full rounded-t-lg border border-gray"
+        className="w-full rounded-t-lg"
         src={project.thumbnailImageUrl}
         width={500}
         height={500}
