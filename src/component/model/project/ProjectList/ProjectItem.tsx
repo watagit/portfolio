@@ -13,8 +13,8 @@ export const ProjectItem: FC<ProjectItemProps> = ({ project }) => {
       <Image
         className="w-full rounded-t-lg border border-gray"
         src={project.thumbnailImageUrl}
-        width={100}
-        height={100}
+        width={500}
+        height={500}
         alt={`${project.serviceName}のサムネイル画像`}
       />
       <div className="flex flex-col gap-3 p-4">
