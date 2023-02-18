@@ -6,7 +6,7 @@ export const Header: FC = () => {
   const avatarImage = "/avatar.png";
 
   return (
-    <header className="p-3 sm:mx-auto sm:w-7/12">
+    <header className="mx-auto w-11/12 py-3 sm:w-2/3">
       <Link className="inline-flex items-center gap-3" href="/">
         <Image
           className="h-16 w-16 rounded-full"
