@@ -6,11 +6,11 @@ import { projects } from "@/data/project";
 
 const Top: NextPage = () => {
   return (
-    <main>
+    <>
       <SectionWithTitle title="Project">
         <ProjectList projects={projects} />
       </SectionWithTitle>
-    </main>
+    </>
   );
 };
 
