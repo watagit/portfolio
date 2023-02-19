@@ -18,9 +18,7 @@ export const ProjectItem: FC<ProjectItemProps> = ({ project }) => {
         alt={`${project.serviceName}のサムネイル画像`}
       />
       <div className="flex flex-col gap-3 p-4">
-        <h3 className="text-xl font-semibold text-black sm:text-base sm:leading-5">
-          {project.serviceName}
-        </h3>
+        <h3 className="sm:text-base sm:leading-5">{project.serviceName}</h3>
         <p className="leading-6 text-black sm:text-xs sm:leading-5">
           {project.description}
         </p>

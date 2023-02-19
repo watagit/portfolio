@@ -11,7 +11,7 @@ export const SectionWithTitle: FC<SectionWithTitleProps> = ({
 }) => {
   return (
     <section className="flex flex-col gap-6">
-      <h2 className="text-2xl font-bold">{title}</h2>
+      <h2>{title}</h2>
       {children}
     </section>
   );
