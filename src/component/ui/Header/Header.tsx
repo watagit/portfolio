@@ -16,7 +16,7 @@ export const Header: FC = () => {
           height={100}
           alt="ロゴ画像"
         />
-        <h1 className="text-lg text-black">what_a_pon</h1>
+        <p className="text-lg text-black">what_a_pon</p>
       </Link>
     </header>
   );
