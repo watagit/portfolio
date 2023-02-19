@@ -12,7 +12,8 @@ const App = ({ Component, pageProps }: AppProps) => {
         description="Wataru Ono's portfolio page"
         og={{
           title: "Wataru Ono",
-          image: "/og.png",
+          image:
+            "https://raw.githubusercontent.com/watagit/portfolio/image/og.png",
         }}
       />
       <Header />
