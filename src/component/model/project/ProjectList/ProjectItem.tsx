@@ -9,7 +9,7 @@ type ProjectItemProps = {
 
 export const ProjectItem: FC<ProjectItemProps> = ({ project }) => {
   return (
-    <div className="rounded-lg border border-gray sm:min-h-[316px]">
+    <div className="rounded-lg border border-gray sm:h-full">
       <Image
         className="w-full rounded-t-lg"
         src={project.thumbnailImageUrl}
