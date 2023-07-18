@@ -9,6 +9,4 @@ export default meta;
 
 type Story = StoryObj<typeof Header>;
 
-export const Default: Story = {
-  args: {},
-};
+export const Default: Story = {};
