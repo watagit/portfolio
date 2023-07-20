@@ -1,0 +1,28 @@
+name: Lint
+
+on:
+  pull_request:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        cmd: ["lint"]
+      fail-fast: false
+    timeout-minutes: 5
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: pnpm/action-setup@v2
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      - name: Run ${{ matrix.cmd }}
+        run: pnpm ${{ matrix.cmd }}
