@@ -12,7 +12,7 @@ export const SocialAccountIconList: FC<SocialAccountIconListProps> = ({
   socialAccounts,
 }) => {
   return (
-    <ul>
+    <ul className="flex items-center gap-3">
       {socialAccounts.map((socialAccount) => (
         <li key={socialAccount.id}>
           <SocialAccountIconItem socialAccount={socialAccount} />
