@@ -1,4 +1,7 @@
 import { type FC } from "react";
+
+import { SocialAccountIconItem } from "./SocialAccountIconItem";
+
 import { type SocialAccount } from "@/domain/socialAccount";
 
 type SocialAccountIconListProps = {
@@ -11,7 +14,9 @@ export const SocialAccountIconList: FC<SocialAccountIconListProps> = ({
   return (
     <ul>
       {socialAccounts.map((socialAccount) => (
-        <li key={socialAccount.id}>{socialAccount.url}</li>
+        <li key={socialAccount.id}>
+          <SocialAccountIconItem socialAccount={socialAccount} />
+        </li>
       ))}
     </ul>
   );
