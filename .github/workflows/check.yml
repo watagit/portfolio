@@ -15,7 +15,7 @@ jobs:
       - id: nvm
         run: echo "::set-output name=nvmrc::$(cat .nvmrc)"
       - uses: pnpm/action-setup@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-node@v3
         with:
           node-version: ${{ steps.nvm.outputs.nvmrc }}
           cache: pnpm
