@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { ProjectItem } from "./ProjectItem";
-import { projects } from "@/data/project";
+import { projects } from "~/data/project";
 
 const meta: Meta<typeof ProjectItem> = {
   component: ProjectItem,

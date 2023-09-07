@@ -1,4 +1,4 @@
-import { biography } from "@/data/biography";
+import { biography } from "~/data/biography";
 
 export const ProfileHeading = () => {
   return (

@@ -1,5 +1,5 @@
 import type { FC } from "react";
-import type { Education } from "@/domain/education";
+import type { Education } from "~/domain/education";
 
 type EducationItemProps = {
   education: Education;
