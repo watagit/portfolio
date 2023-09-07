@@ -14,7 +14,7 @@ jobs:
       fail-fast: false
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - id: nvm
         run: echo "::set-output name=nvmrc::$(cat .nvmrc)"
       - uses: pnpm/action-setup@v2
