@@ -1,5 +1,5 @@
 import type { FC } from "react";
-import type { Experience } from "@/domain/experience";
+import type { Experience } from "~/domain/experience";
 
 type ExperienceItemProps = {
   experience: Experience;

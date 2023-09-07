@@ -1,4 +1,4 @@
-import type { Experience } from "@/domain/experience";
+import type { Experience } from "~/domain/experience";
 
 export const experiences: Array<Experience> = [
   {

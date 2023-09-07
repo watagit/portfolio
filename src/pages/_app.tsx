@@ -2,8 +2,8 @@ import type { AppProps } from "next/app";
 import Head from "next/head";
 import NextHeadSeo from "next-head-seo";
 
-import { Header } from "@/component/ui/Header";
-import "@/style/global.css";
+import { Header } from "~/component/ui/Header";
+import "~/style/global.css";
 
 const App = ({ Component, pageProps }: AppProps) => {
   return (

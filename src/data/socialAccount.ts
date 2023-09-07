@@ -1,4 +1,4 @@
-import { type SocialAccount } from "@/domain/socialAccount";
+import { type SocialAccount } from "~/domain/socialAccount";
 
 export const socialAccounts: Array<SocialAccount> = [
   { id: "1", accountType: "twitter", url: "https://twitter.com/what_a_pon" },

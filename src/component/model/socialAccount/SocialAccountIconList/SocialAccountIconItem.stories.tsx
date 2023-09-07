@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 
 import { SocialAccountIconItem } from "./SocialAccountIconItem";
 
-import { socialAccounts } from "@/data/socialAccount";
+import { socialAccounts } from "~/data/socialAccount";
 
 const meta: Meta<typeof SocialAccountIconItem> = {
   component: SocialAccountIconItem,

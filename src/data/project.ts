@@ -1,4 +1,4 @@
-import type { Project } from "@/domain/project";
+import type { Project } from "~/domain/project";
 
 export const projects: Array<Project> = [
   {

@@ -2,7 +2,7 @@ import { type FC } from "react";
 
 import { SocialAccountIconItem } from "./SocialAccountIconItem";
 
-import { type SocialAccount } from "@/domain/socialAccount";
+import { type SocialAccount } from "~/domain/socialAccount";
 
 type SocialAccountIconListProps = {
   socialAccounts: Array<SocialAccount>;

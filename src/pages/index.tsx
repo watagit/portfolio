@@ -1,13 +1,13 @@
 import type { NextPage } from "next";
 
-import { SectionWithTitle } from "@/component/ui/SectionWithTitle";
-import { ProfileHeading } from "@/component/ui/ProfileHeading";
-import { ProjectList } from "@/component/model/project/ProjectList";
-import { ExperienceList } from "@/component/model/experience/ExperienceList";
-import { EducationList } from "@/component/model/education/EducationList";
-import { projects } from "@/data/project";
-import { experiences } from "@/data/experience";
-import { educations } from "@/data/education";
+import { SectionWithTitle } from "~/component/ui/SectionWithTitle";
+import { ProfileHeading } from "~/component/ui/ProfileHeading";
+import { ProjectList } from "~/component/model/project/ProjectList";
+import { ExperienceList } from "~/component/model/experience/ExperienceList";
+import { EducationList } from "~/component/model/education/EducationList";
+import { projects } from "~/data/project";
+import { experiences } from "~/data/experience";
+import { educations } from "~/data/education";
 
 const Top: NextPage = () => {
   return (
