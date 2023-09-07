@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { EducationList } from "./EducationList";
-import { educations } from "@/data/education";
+import { educations } from "~/data/education";
 
 const meta: Meta<typeof EducationList> = {
   component: EducationList,

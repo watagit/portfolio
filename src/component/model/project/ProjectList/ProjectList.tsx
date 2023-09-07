@@ -1,7 +1,7 @@
 import type { FC } from "react";
 
 import { ProjectItem } from "./ProjectItem";
-import type { Project } from "@/domain/project";
+import type { Project } from "~/domain/project";
 
 type ProjectListProps = {
   projects: Array<Project>;

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import type { FC } from "react";
 
-import type { Project } from "@/domain/project";
+import type { Project } from "~/domain/project";
 
 type ProjectItemProps = {
   project: Project;

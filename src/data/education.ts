@@ -1,4 +1,4 @@
-import type { Education } from "@/domain/education";
+import type { Education } from "~/domain/education";
 
 export const educations: Array<Education> = [
   {

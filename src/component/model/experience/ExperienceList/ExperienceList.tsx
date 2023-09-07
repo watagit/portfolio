@@ -1,7 +1,7 @@
 import type { FC } from "react";
 
 import { ExperienceItem } from "./ExperienceItem";
-import type { Experience } from "@/domain/experience";
+import type { Experience } from "~/domain/experience";
 
 type ExperienceListProps = {
   experiences: Array<Experience>;

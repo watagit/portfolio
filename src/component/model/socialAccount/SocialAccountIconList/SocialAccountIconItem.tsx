@@ -2,7 +2,7 @@ import { type FC } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import { type SocialAccount } from "@/domain/socialAccount";
+import { type SocialAccount } from "~/domain/socialAccount";
 
 type SocialAccountIconItemProps = {
   socialAccount: SocialAccount;

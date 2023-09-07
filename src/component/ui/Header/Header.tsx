@@ -2,8 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import type { FC } from "react";
 
-import { SocialAccountIconList } from "@/component/model/socialAccount/SocialAccountIconList";
-import { socialAccounts } from "@/data/socialAccount";
+import { SocialAccountIconList } from "~/component/model/socialAccount/SocialAccountIconList";
+import { socialAccounts } from "~/data/socialAccount";
 
 export const Header: FC = () => {
   const avatarImage = "/avatar.png";
