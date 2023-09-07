@@ -12,15 +12,13 @@ export const SocialAccountIconItem: FC<SocialAccountIconItemProps> = ({
   socialAccount,
 }) => {
   return (
-    <Link href={socialAccount.url}>
-      <a target="_blank" rel="noopener noreferrer">
-        <Image
-          src={`/sns/${socialAccount.accountType}.svg`}
-          alt={`icon for ${socialAccount.accountType}`}
-          width={24}
-          height={24}
-        />
-      </a>
+    <Link href={socialAccount.url} target="_blank" rel="noopener noreferrer">
+      <Image
+        src={`/sns/${socialAccount.accountType}.svg`}
+        alt={`icon for ${socialAccount.accountType}`}
+        width={24}
+        height={24}
+      />
     </Link>
   );
 };
