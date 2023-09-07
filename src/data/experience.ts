@@ -13,7 +13,7 @@ export const experiences: Array<Experience> = [
     id: "2",
     companyName: "Crosshare 株式会社",
     position: "フロントエンドエンジニア",
-    period: "2021/3 - 現在",
+    period: "2021/3 - 2022/12",
     description:
       "業務委託でゲーマー向けマッチングサービスの開発に携わりました。主にフロントエンドの開発を担当し、開発面のマネジメントやユーザーインタビュー等にも貢献しました。現在は受託開発チームで開発業務に従事しています。",
   },
