@@ -9,6 +9,7 @@
     "lint": "run-s -c 'lint:*'",
     "lint:eslint": "next lint",
     "lint:markup": "markuplint **/*.tsx",
+    "lint:tsc": "tsc",
     "format": "prettier --write src",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"

@@ -4,4 +4,4 @@ export type SocialAccount = {
   url: string;
 };
 
-type AccountType = "twitter" | "github";
+type AccountType = "x" | "github";
