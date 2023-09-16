@@ -2,6 +2,7 @@ import type { FC, ReactNode } from "react";
 import { type Metadata } from "next";
 import { Header } from "~/component/ui/Header";
 import "../style/global.css";
+import Head from "next/head";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://onwtr.dev"),
@@ -21,7 +22,7 @@ type RootLayoutProps = {
 const RootLayout: FC<RootLayoutProps> = ({ children }) => {
   return (
     <html lang="en">
-      <head>
+      <Head>
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -47,7 +48,7 @@ const RootLayout: FC<RootLayoutProps> = ({ children }) => {
         />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
-      </head>
+      </Head>
       <body>
         <Header />
         <main className="mx-auto w-11/12 sm:w-2/3">{children}</main>
