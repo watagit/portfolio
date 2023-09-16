@@ -10,7 +10,7 @@
     "lint:eslint": "next lint",
     "lint:markup": "markuplint **/*.tsx",
     "lint:tsc": "tsc",
-    "format": "prettier --write src",
+    "format": "prettier --write .",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
@@ -40,6 +40,7 @@
     "@storybook/nextjs": "^7.0.27",
     "@storybook/react": "^7.0.27",
     "@storybook/testing-library": "^0.2.0",
+    "@trivago/prettier-plugin-sort-imports": "^4.2.0",
     "@types/prettier": "^2",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-storybook": "^0.6.12",
