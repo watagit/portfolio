@@ -4,6 +4,7 @@ import { Header } from "~/component/ui/Header";
 import "../style/global.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://onwtr.dev"),
   title: "Wataru Ono",
   description: "Wataru Ono's portfolio page",
   openGraph: {
