@@ -1,13 +1,27 @@
-import type { AppProps } from "next/app";
-import Head from "next/head";
-import NextHeadSeo from "next-head-seo";
-
+import type { FC, ReactNode } from "react";
+import { type Metadata } from "next";
 import { Header } from "~/component/ui/Header";
-import "~/style/global.css";
+import "../style/global.css";
+import Head from "next/head";
 
-const App = ({ Component, pageProps }: AppProps) => {
+export const metadata: Metadata = {
+  metadataBase: new URL("https://onwtr.dev"),
+  title: "Wataru Ono",
+  description: "Wataru Ono's portfolio page",
+  openGraph: {
+    images: [
+      "https://raw.githubusercontent.com/watagit/portfolio/image/og.png",
+    ],
+  },
+};
+
+type RootLayoutProps = {
+  children: ReactNode;
+};
+
+const RootLayout: FC<RootLayoutProps> = ({ children }) => {
   return (
-    <>
+    <html lang="en">
       <Head>
         <link
           rel="apple-touch-icon"
@@ -35,21 +49,12 @@ const App = ({ Component, pageProps }: AppProps) => {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
-      <NextHeadSeo
-        title="Wataru Ono"
-        description="Wataru Ono's portfolio page"
-        og={{
-          title: "Wataru Ono",
-          image:
-            "https://raw.githubusercontent.com/watagit/portfolio/image/og.png",
-        }}
-      />
-      <Header />
-      <main className="mx-auto w-11/12 sm:w-2/3">
-        <Component {...pageProps} />
-      </main>
-    </>
+      <body>
+        <Header />
+        <main className="mx-auto w-11/12 sm:w-2/3">{children}</main>
+      </body>
+    </html>
   );
 };
 
-export default App;
+export default RootLayout;

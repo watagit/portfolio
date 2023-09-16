@@ -1,4 +1,6 @@
-import type { NextPage } from "next";
+"use client";
+
+import { type FC } from "react";
 
 import { SectionWithTitle } from "~/component/ui/SectionWithTitle";
 import { ProfileHeading } from "~/component/ui/ProfileHeading";
@@ -9,7 +11,7 @@ import { projects } from "~/data/project";
 import { experiences } from "~/data/experience";
 import { educations } from "~/data/education";
 
-const Top: NextPage = () => {
+export const Top: FC = () => {
   return (
     <div className="my-14 flex flex-col gap-8">
       <ProfileHeading />
@@ -25,5 +27,3 @@ const Top: NextPage = () => {
     </div>
   );
 };
-
-export default Top;
