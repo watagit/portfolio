@@ -1,4 +1,5 @@
 import type { FC } from "react";
+
 import type { Education } from "~/domain/education";
 
 type EducationItemProps = {

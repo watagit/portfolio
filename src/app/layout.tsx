@@ -1,8 +1,9 @@
-import type { FC, ReactNode } from "react";
 import { type Metadata } from "next";
-import { Header } from "~/component/ui/Header";
-import "../style/global.css";
 import Head from "next/head";
+import type { FC, ReactNode } from "react";
+
+import { Header } from "~/component/ui/Header";
+import "~/style/global.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://onwtr.dev"),
