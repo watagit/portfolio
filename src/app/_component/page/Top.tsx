@@ -2,14 +2,14 @@
 
 import { type FC } from "react";
 
-import { SectionWithTitle } from "~/component/ui/SectionWithTitle";
-import { ProfileHeading } from "~/component/ui/ProfileHeading";
-import { ProjectList } from "~/component/model/project/ProjectList";
-import { ExperienceList } from "~/component/model/experience/ExperienceList";
 import { EducationList } from "~/component/model/education/EducationList";
-import { projects } from "~/data/project";
-import { experiences } from "~/data/experience";
+import { ExperienceList } from "~/component/model/experience/ExperienceList";
+import { ProjectList } from "~/component/model/project/ProjectList";
+import { ProfileHeading } from "~/component/ui/ProfileHeading";
+import { SectionWithTitle } from "~/component/ui/SectionWithTitle";
 import { educations } from "~/data/education";
+import { experiences } from "~/data/experience";
+import { projects } from "~/data/project";
 
 export const Top: FC = () => {
   return (

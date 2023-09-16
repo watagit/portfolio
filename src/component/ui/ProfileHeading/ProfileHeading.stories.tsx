@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
+
 import { ProfileHeading } from "./ProfileHeading";
 
 const meta: Meta<typeof ProfileHeading> = {
