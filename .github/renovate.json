@@ -1,4 +1,4 @@
 {
-  "reviewers": ["watagit"],
-  "extends": ["group:allNonMajor"]
+  "extends": ["config:base", "group:allNonMajor"],
+  "reviewers": ["watagit"]
 }
