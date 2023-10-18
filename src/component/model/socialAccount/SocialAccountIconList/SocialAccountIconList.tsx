@@ -1,7 +1,7 @@
 import { type FC } from "react";
 
 import { SocialAccountIconItem } from "./SocialAccountIconItem";
-import { container } from "./style.css";
+import { styles } from "./style.css";
 
 import { type SocialAccount } from "~/domain/socialAccount";
 
@@ -13,7 +13,7 @@ export const SocialAccountIconList: FC<SocialAccountIconListProps> = ({
   socialAccounts,
 }) => {
   return (
-    <ul className={container}>
+    <ul className={styles.container}>
       {socialAccounts.map((socialAccount) => (
         <li key={socialAccount.id}>
           <SocialAccountIconItem socialAccount={socialAccount} />
