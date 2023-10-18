@@ -1,10 +1,12 @@
+import { styles } from "./style.css";
+
 import { biography } from "~/data/biography";
 
 export const ProfileHeading = () => {
   return (
-    <div className="flex flex-col gap-2">
+    <div className={styles.container}>
       <h1>Wataru Ono</h1>
-      <p className="whitespace-pre-line">{biography}</p>
+      <p className={styles.biography}>{biography}</p>
     </div>
   );
 };
