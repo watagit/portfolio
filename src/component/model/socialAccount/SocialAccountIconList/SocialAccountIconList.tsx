@@ -1,6 +1,7 @@
 import { type FC } from "react";
 
 import { SocialAccountIconItem } from "./SocialAccountIconItem";
+import { container } from "./style.css";
 
 import { type SocialAccount } from "~/domain/socialAccount";
 
@@ -12,7 +13,7 @@ export const SocialAccountIconList: FC<SocialAccountIconListProps> = ({
   socialAccounts,
 }) => {
   return (
-    <ul className="flex items-center gap-3">
+    <ul className={container}>
       {socialAccounts.map((socialAccount) => (
         <li key={socialAccount.id}>
           <SocialAccountIconItem socialAccount={socialAccount} />
