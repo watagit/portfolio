@@ -3,6 +3,13 @@ import type { Experience } from "~/domain/experience";
 export const experiences: Array<Experience> = [
   {
     id: crypto.randomUUID(),
+    companyName: "AnyReach 株式会社",
+    position: "フルスタックエンジニア",
+    period: "2023/11 - 現在",
+    description: "自社サービスである AnyGift の開発に携わっています。",
+  },
+  {
+    id: crypto.randomUUID(),
     companyName: "C-Style 株式会社",
     position: "フロントエンドエンジニア",
     period: "2020/12 - 現在",
