@@ -3,6 +3,13 @@ import type { Experience } from "~/domain/experience";
 export const experiences: Array<Experience> = [
   {
     id: crypto.randomUUID(),
+    companyName: "株式会社 Helpfeel",
+    position: "フルスタックエンジニア",
+    period: "2023/12 - 現在",
+    description: "自社サービスである Helpfeel の開発に携わっています。",
+  },
+  {
+    id: crypto.randomUUID(),
     companyName: "AnyReach 株式会社",
     position: "フルスタックエンジニア",
     period: "2023/11 - 現在",
@@ -22,7 +29,7 @@ export const experiences: Array<Experience> = [
     position: "フロントエンドエンジニア",
     period: "2021/3 - 2022/12",
     description:
-      "業務委託でゲーマー向けマッチングサービスの開発に携わりました。主にフロントエンドの開発を担当し、開発面のマネジメントやユーザーインタビュー等にも貢献しました。現在は受託開発チームで開発業務に従事しています。",
+      "業務委託でゲーマー向けマッチングサービスの開発に携わりました。主にフロントエンドの開発を担当し、開発面のマネジメントやユーザーインタビュー等にも貢献しました。",
   },
   {
     id: crypto.randomUUID(),
