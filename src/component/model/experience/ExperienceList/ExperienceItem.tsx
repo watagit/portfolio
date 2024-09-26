@@ -10,7 +10,7 @@ export const ExperienceItem: FC<ExperienceItemProps> = ({ experience }) => {
   return (
     <div className="flex flex-col gap-2">
       <div>
-        <h3>{experience.companyName}</h3>
+        <h2>{experience.companyName}</h2>
         {experience.position && (
           <p className="text-xs leading-5">{experience.position}</p>
         )}
