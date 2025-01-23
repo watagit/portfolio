@@ -6,14 +6,16 @@ export const experiences: Array<Experience> = [
     companyName: "株式会社ディー・エヌ・エー",
     position: "ソフトウェアエンジニア(フルタイム)",
     period: "2024/4 - 現在",
-    description: "自社サービスであるPocochaのサーバーサイド開発を担当しています。",
+    description:
+      "自社サービスであるPocochaのサーバーサイド開発を担当しています。",
   },
   {
     id: crypto.randomUUID(),
     companyName: "株式会社世良",
     position: "ソフトウェアエンジニア(副業)",
     period: "2025/1 - 現在",
-    description: "受託開発チームにてソフトウェアエンジニアとして携わっています。",
+    description:
+      "受託開発チームにてソフトウェアエンジニアとして携わっています。",
   },
   {
     id: crypto.randomUUID(),
