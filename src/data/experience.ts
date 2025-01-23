@@ -13,7 +13,7 @@ export const experiences: Array<Experience> = [
     companyName: "株式会社世良",
     position: "ソフトウェアエンジニア(副業)",
     period: "2025/1 - 現在",
-    description: "受託開発チームにてソフトウェアとして携わっています。",
+    description: "受託開発チームにてソフトウェアエンジニアとして携わっています。",
   },
   {
     id: crypto.randomUUID(),
