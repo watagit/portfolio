@@ -8,6 +8,9 @@ export const styles = {
   }),
 
   biography: style({
+    display: 'flex',
+    flexDirection: 'column',
+    gap: 8,
     whiteSpace: "pre-line",
   }),
 };
