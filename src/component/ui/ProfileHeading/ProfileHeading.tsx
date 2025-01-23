@@ -6,7 +6,7 @@ export const ProfileHeading = () => {
   return (
     <div className={styles.container}>
       <h1>Wataru Ono</h1>
-      <p className={styles.biography}>{biography}</p>
+      <div className={styles.biography}>{biography}</div>
     </div>
   );
 };
