@@ -52,5 +52,5 @@
     "prettier-plugin-tailwindcss": "^0.6.11",
     "storybook": "^8.5.8"
   },
-  "packageManager": "pnpm@9.15.5"
+  "packageManager": "pnpm@10.15.0"
 }
