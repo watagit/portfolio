@@ -15,7 +15,7 @@ export const experiences: Array<Experience> = [
     position: "ソフトウェアエンジニア(副業)",
     period: "2025/1 - 現在",
     description:
-      "受託開発チームにてソフトウェアエンジニアとして携わっています。",
+      "受託開発チームにてソフトウェアエンジニアとして携わっています。フロントエンドからバックエンド、AIモデルの組み込みまで一貫して開発業務を担当しています。",
   },
   {
     id: crypto.randomUUID(),
