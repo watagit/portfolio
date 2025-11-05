@@ -1,5 +1,3 @@
-"use client";
-
 import { type FC } from "react";
 
 import { EducationList } from "~/component/model/education/EducationList";
