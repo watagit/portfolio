@@ -1,4 +1,3 @@
-import Image from "next/image";
 import type { FC } from "react";
 
 import type { Project } from "~/domain/project";
@@ -10,7 +9,7 @@ type ProjectItemProps = {
 export const ProjectItem: FC<ProjectItemProps> = ({ project }) => {
   return (
     <div className="border-gray rounded-lg border sm:h-full">
-      <Image
+      <img
         className="w-full rounded-t-lg"
         src={project.thumbnailImageUrl}
         width={500}
