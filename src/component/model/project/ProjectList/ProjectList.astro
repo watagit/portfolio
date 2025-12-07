@@ -1,0 +1,18 @@
+---
+import ProjectItem from "./ProjectItem.astro";
+import type { Project } from "~/domain/project";
+
+interface Props {
+  projects: Array<Project>;
+}
+
+const { projects } = Astro.props;
+---
+
+<ul class="flex flex-col gap-4 sm:grid sm:grid-cols-3">
+  {projects.map((project) => (
+    <li key={project.id}>
+      <ProjectItem project={project} />
+    </li>
+  ))}
+</ul>

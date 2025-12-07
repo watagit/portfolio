@@ -1,0 +1,23 @@
+---
+import { Image } from "astro:assets";
+import { styles } from "./style.css";
+import SocialAccountIconList from "~/component/model/socialAccount/SocialAccountIconList/SocialAccountIconList.astro";
+import { socialAccounts } from "~/data/socialAccount";
+import avatarImage from "../../../../public/avatar.png";
+---
+
+<header class={styles.container}>
+  <a class={styles.avatarContainer} href="/">
+    <Image
+      class={styles.avatar}
+      src={avatarImage}
+      width={100}
+      height={100}
+      alt="ロゴ画像"
+      format="webp"
+      quality={85}
+    />
+    <p class={styles.title}>what_a_pon</p>
+  </a>
+  <SocialAccountIconList socialAccounts={socialAccounts} />
+</header>

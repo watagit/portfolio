@@ -1,0 +1,19 @@
+---
+import SocialAccountIconItem from "./SocialAccountIconItem.astro";
+import { styles } from "./style.css";
+import { type SocialAccount } from "~/domain/socialAccount";
+
+interface Props {
+  socialAccounts: Array<SocialAccount>;
+}
+
+const { socialAccounts } = Astro.props;
+---
+
+<ul class={styles.container}>
+  {socialAccounts.map((socialAccount) => (
+    <li key={socialAccount.id}>
+      <SocialAccountIconItem socialAccount={socialAccount} />
+    </li>
+  ))}
+</ul>

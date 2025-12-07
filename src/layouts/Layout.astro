@@ -1,5 +1,5 @@
 ---
-import { Header } from "~/component/ui/Header";
+import Header from "~/component/ui/Header/Header.astro";
 import "~/style/global.css";
 
 interface Props {
@@ -30,7 +30,7 @@ const {
     <title>{title}</title>
   </head>
   <body>
-    <Header client:load />
+    <Header />
     <main class="mx-auto w-11/12 sm:w-2/3">
       <slot />
     </main>

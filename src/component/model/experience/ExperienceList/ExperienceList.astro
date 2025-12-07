@@ -1,0 +1,18 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+import type { Experience } from "~/domain/experience";
+
+interface Props {
+  experiences: Array<Experience>;
+}
+
+const { experiences } = Astro.props;
+---
+
+<ul class="flex flex-col gap-4">
+  {experiences.map((experience) => (
+    <li key={experience.id}>
+      <ExperienceItem experience={experience} />
+    </li>
+  ))}
+</ul>
