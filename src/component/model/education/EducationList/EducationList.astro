@@ -1,0 +1,18 @@
+---
+import EducationItem from "./EducationItem.astro";
+import type { Education } from "~/domain/education";
+
+interface Props {
+  educations: Array<Education>;
+}
+
+const { educations } = Astro.props;
+---
+
+<ul class="flex flex-col gap-4">
+  {educations.map((education) => (
+    <li key={education.id}>
+      <EducationItem education={education} />
+    </li>
+  ))}
+</ul>

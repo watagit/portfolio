@@ -1,0 +1,18 @@
+---
+import { type SocialAccount } from "~/domain/socialAccount";
+
+interface Props {
+  socialAccount: SocialAccount;
+}
+
+const { socialAccount } = Astro.props;
+---
+
+<a href={socialAccount.url} target="_blank" rel="noopener noreferrer">
+  <img
+    src={`/sns/${socialAccount.accountType}.svg`}
+    alt={`icon for ${socialAccount.accountType}`}
+    width={24}
+    height={24}
+  />
+</a>

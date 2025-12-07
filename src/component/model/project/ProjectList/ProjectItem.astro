@@ -1,0 +1,47 @@
+---
+import { Image } from "astro:assets";
+import type { Project } from "~/domain/project";
+
+interface Props {
+  project: Project;
+}
+
+const { project } = Astro.props;
+
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  "/public/projects/*.png",
+  { eager: true },
+);
+const imageSrc = images[`/public${project.thumbnailImageUrl}`]?.default;
+---
+
+<div class="border-gray rounded-lg border sm:h-full">
+  {
+    imageSrc ? (
+      <Image
+        class="w-full rounded-t-lg"
+        src={imageSrc}
+        width={500}
+        height={500}
+        alt={`${project.serviceName}のサムネイル画像`}
+        format="webp"
+        quality={85}
+        loading="eager"
+      />
+    ) : (
+      <img
+        class="w-full rounded-t-lg"
+        src={project.thumbnailImageUrl}
+        width={500}
+        height={500}
+        alt={`${project.serviceName}のサムネイル画像`}
+      />
+    )
+  }
+  <div class="flex flex-col gap-3 p-4">
+    <h2 class="sm:text-base sm:leading-5">{project.serviceName}</h2>
+    <p class="leading-6 text-black sm:text-xs sm:leading-5">
+      {project.description}
+    </p>
+  </div>
+</div>

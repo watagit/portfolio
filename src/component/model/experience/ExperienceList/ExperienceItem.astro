@@ -1,0 +1,20 @@
+---
+import type { Experience } from "~/domain/experience";
+
+interface Props {
+  experience: Experience;
+}
+
+const { experience } = Astro.props;
+---
+
+<div class="flex flex-col gap-2">
+  <div>
+    <h2>{experience.companyName}</h2>
+    {experience.position && (
+      <p class="text-xs leading-5">{experience.position}</p>
+    )}
+    <p class="text-xs leading-5">{experience.period}</p>
+  </div>
+  <p>{experience.description}</p>
+</div>
