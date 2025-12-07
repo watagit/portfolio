@@ -1,7 +1,4 @@
-import nextPlugin from "eslint-config-next";
-
 const eslintConfig = [
-  ...nextPlugin,
   {
     ignores: [
       ".next/**",
@@ -10,6 +7,7 @@ const eslintConfig = [
       "next-env.d.ts",
       "storybook-static/**",
       "node_modules/**",
+      "dist/**",
     ],
   },
 ];
