@@ -16,7 +16,7 @@
   "dependencies": {
     "@astrojs/tailwind": "6.0.2",
     "@tailwindcss/postcss": "4.1.18",
-    "@types/node": "22.19.3",
+    "@types/node": "22.19.7",
     "@vanilla-extract/css": "1.18.0",
     "astro": "5.16.6",
     "eslint": "9.39.2",
@@ -37,7 +37,7 @@
     "prettier-plugin-tailwindcss": "0.7.2"
   },
   "engines": {
-    "node": ">=22.21.1"
+    "node": ">=22.22.0"
   },
   "packageManager": "pnpm@10.28.1"
 }
