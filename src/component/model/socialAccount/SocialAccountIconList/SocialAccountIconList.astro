@@ -12,7 +12,7 @@ const { socialAccounts } = Astro.props;
 
 <ul class={styles.container}>
   {socialAccounts.map((socialAccount) => (
-    <li key={socialAccount.id}>
+    <li>
       <SocialAccountIconItem socialAccount={socialAccount} />
     </li>
   ))}

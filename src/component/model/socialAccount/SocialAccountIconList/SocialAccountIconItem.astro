@@ -12,7 +12,7 @@ const { socialAccount } = Astro.props;
   <img
     src={`/sns/${socialAccount.accountType}.svg`}
     alt={`icon for ${socialAccount.accountType}`}
-    width={24}
-    height={24}
+    width={socialAccount.size}
+    height={socialAccount.size}
   />
 </a>
