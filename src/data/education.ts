@@ -4,7 +4,7 @@ export const educations: Array<Education> = [
   {
     id: "1",
     universityName: "奈良先端科学技術大学院大学",
-    period: "2022/4 - 2024/4 (中退)",
+    period: "2022/4 - 2024/4",
     description: "コンピュテーショナルフォトグラフィ分野の研究を行いました。",
   },
   {
