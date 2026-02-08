@@ -1,9 +1,10 @@
 ---
-import { Image } from "astro:assets";
+import avatarImage from "../../../../public/avatar.png";
 import { styles } from "./style.css";
+
 import SocialAccountIconList from "~/component/model/socialAccount/SocialAccountIconList/SocialAccountIconList.astro";
 import { socialAccounts } from "~/data/socialAccount";
-import avatarImage from "../../../../public/avatar.png";
+import { Image } from "astro:assets";
 ---
 
 <header class={styles.container}>
