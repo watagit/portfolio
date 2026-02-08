@@ -26,10 +26,10 @@ Static Site Generation (SSG) - Astroによる高速な静的サイト生成
 - 明示的な型定義を優先
 
 ### Code Quality
-- **Linter**: ESLint (minimal configuration)
-- **Formatter**: Prettier
-  - Import順序自動整理 (`@trivago/prettier-plugin-sort-imports`)
-  - Astro/Tailwindプラグイン統合
+- **Linter/Formatter**: [Biome](https://biomejs.dev/) - オールインワンツールチェーン
+  - Import順序自動整理 (`organizeImports` - サードパーティ → 相対パス → エイリアス)
+  - TypeScript/Astro対応
+  - 高速なフォーマット・リント統合
 - **Markup Quality**: Markuplint (Astro対応)
 
 ### Testing
@@ -46,8 +46,8 @@ Static Site Generation (SSG) - Astroによる高速な静的サイト生成
 # Dev: pnpm dev
 # Build: pnpm build
 # Preview: pnpm preview
-# Lint: pnpm lint (eslint + markuplint + tsc)
-# Format: pnpm format
+# Lint: pnpm lint (biome + markuplint + tsc)
+# Format: pnpm format (biome)
 ```
 
 ## Key Technical Decisions
