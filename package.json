@@ -16,7 +16,7 @@
   "dependencies": {
     "@astrojs/tailwind": "6.0.2",
     "@tailwindcss/postcss": "4.1.18",
-    "@types/node": "22.19.7",
+    "@types/node": "22.19.11",
     "@vanilla-extract/css": "1.18.0",
     "astro": "5.17.1",
     "postcss": "8.5.6",
