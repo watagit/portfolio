@@ -29,7 +29,7 @@
     "@markuplint/jsx-parser": "4.7.23",
     "@markuplint/react-spec": "4.5.23",
     "@vanilla-extract/vite-plugin": "5.1.4",
-    "markuplint": "4.14.0",
+    "markuplint": "4.14.1",
     "npm-run-all2": "8.0.4"
   },
   "engines": {
