@@ -1,4 +1,4 @@
-import { style } from "@vanilla-extract/css";
+import { globalStyle, style } from "@vanilla-extract/css";
 
 export const styles = {
   container: style({
@@ -14,3 +14,7 @@ export const styles = {
     whiteSpace: "pre-line",
   }),
 };
+
+globalStyle(`${styles.biography} p`, {
+  margin: 0,
+});
