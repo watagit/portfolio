@@ -1,6 +1,5 @@
 ---
 import SocialAccountIconItem from "./SocialAccountIconItem.astro";
-import { styles } from "./style.css";
 
 import type { SocialAccount } from "~/domain/socialAccount";
 
@@ -11,7 +10,7 @@ interface Props {
 const { socialAccounts } = Astro.props;
 ---
 
-<ul class={styles.container}>
+<ul class="flex items-center gap-3">
   {socialAccounts.map((socialAccount) => (
     <li>
       <SocialAccountIconItem socialAccount={socialAccount} />
