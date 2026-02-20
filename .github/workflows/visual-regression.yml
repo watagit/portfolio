@@ -10,6 +10,9 @@ jobs:
     # Only run when Vercel deployment is successful
     if: github.event_name == 'deployment_status' && github.event.deployment_status.state == 'success' && github.event.deployment_status.environment == 'Preview'
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      statuses: write
 
     steps:
       - uses: actions/checkout@v6
