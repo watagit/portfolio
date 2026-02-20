@@ -10,7 +10,7 @@ export const styles = {
   biography: style({
     display: "flex",
     flexDirection: "column",
-    gap: 8,
+    gap: 4,
     whiteSpace: "pre-line",
   }),
 };
