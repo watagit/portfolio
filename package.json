@@ -11,7 +11,10 @@
     "lint:biome": "biome check .",
     "lint:markup": "markuplint **/*.astro",
     "lint:tsc": "tsc",
-    "format": "biome format --write ."
+    "format": "biome format --write .",
+    "test:visual": "playwright test",
+    "test:visual:ui": "playwright test --ui",
+    "argos": "argos"
   },
   "dependencies": {
     "@astrojs/tailwind": "6.0.2",
@@ -25,9 +28,11 @@
     "typescript": "5.9.3"
   },
   "devDependencies": {
+    "@argos-ci/cli": "^4.1.0",
     "@biomejs/biome": "2.4.2",
     "@markuplint/jsx-parser": "4.7.23",
     "@markuplint/react-spec": "4.5.23",
+    "@playwright/test": "^1.58.2",
     "@vanilla-extract/vite-plugin": "5.1.4",
     "markuplint": "4.14.1",
     "npm-run-all2": "8.0.4"
