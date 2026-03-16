@@ -2,7 +2,6 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:recommended"],
   "rangeStrategy": "bump",
-  "reviewers": ["watagit"],
   "packageRules": [
     {
       "description": "Pin Node.js to v22 until Vercel supports v24",
