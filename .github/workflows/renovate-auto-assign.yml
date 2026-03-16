@@ -1,0 +1,46 @@
+name: Renovate PR にレビュワーをアサイン
+
+on:
+  workflow_run:
+    workflows: ["Check source codes"]
+    types: [completed]
+
+jobs:
+  assign-reviewer:
+    if: >
+      github.event.workflow_run.conclusion == 'success' &&
+      github.event.workflow_run.event == 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+
+    steps:
+      - name: PR番号を取得
+        id: get-pr
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const prs = await github.rest.pulls.list({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              head: `${context.repo.owner}:${context.payload.workflow_run.head_branch}`,
+            });
+            if (prs.data.length === 0) return;
+            const pr = prs.data[0];
+            const isRenovate = pr.user.login === 'renovate[bot]';
+            if (!isRenovate) return;
+            core.setOutput('pr_number', pr.number);
+            core.setOutput('is_renovate', 'true');
+
+      - name: レビュワーをアサイン
+        if: steps.get-pr.outputs.is_renovate == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.pulls.requestReviewers({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: parseInt('${{ steps.get-pr.outputs.pr_number }}'),
+              reviewers: ['watagit'],
+            });
