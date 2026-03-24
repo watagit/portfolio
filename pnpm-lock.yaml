@@ -34,8 +34,8 @@ importers:
         specifier: ^4.1.1
         version: 4.1.1
       '@argos-ci/playwright':
-        specifier: ^6.4.2
-        version: 6.4.2
+        specifier: ^6.5.0
+        version: 6.5.0
       '@biomejs/biome':
         specifier: 2.4.7
         version: 2.4.7
@@ -78,12 +78,20 @@ packages:
     resolution: {integrity: sha512-RI5pYb5wmWUoXzWefNCjKSqGA3BroUB2ac9awlYV3McJjSAW8nCGJUt2Eds90Shkp+i4S6KbMLnLG56slhTCsg==}
     engines: {node: '>=20.0.0'}
 
-  '@argos-ci/playwright@6.4.2':
-    resolution: {integrity: sha512-0HE4rmgx2/znlMUi3z0Bp8OD7u7zNls9SlljL+qTVoWQRW22sDvpmRdZpjzb4pEjoe6onqPTDOqm5/f8QYHMwg==}
+  '@argos-ci/core@5.1.2':
+    resolution: {integrity: sha512-CIZWhd3JFgjaA8OGhraYS5UbJnBz2ZwaP3zpkF8xuDVvpsn92OgQACAtXszzAEjXNoHBXutTwCeedS89vAjUqQ==}
+    engines: {node: '>=20.0.0'}
+
+  '@argos-ci/playwright@6.5.0':
+    resolution: {integrity: sha512-LatFWSBzazG16PyeyY70OEso1uso/Q2DYOrd0ecBDBEmPQSLDuabXHExfbQz80j8aM2Z5IbAVawdft89PPanlg==}
     engines: {node: '>=20.0.0'}
 
   '@argos-ci/util@3.2.0':
     resolution: {integrity: sha512-/Bn0qCH8VsdPv5WB9TUEf3oTgsIqsTMUEjPVDopHLzKK+j7nQYGOF3MnN7VhBow82BXeStBfJCS3UiZ6cgxRlw==}
+    engines: {node: '>=20.0.0'}
+
+  '@argos-ci/util@3.3.0':
+    resolution: {integrity: sha512-TeLTLCR4wiN+OqXPKeXvbgjIURNN4s9pLR3759lEVxWu7uUFKoWUFxewM2hHiCZ/A9FRJv4dSiKObpbOLHo3aw==}
     engines: {node: '>=20.0.0'}
 
   '@astrojs/compiler@2.13.0':
@@ -2765,17 +2773,32 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@argos-ci/playwright@6.4.2':
+  '@argos-ci/core@5.1.2':
+    dependencies:
+      '@argos-ci/api-client': 0.16.0
+      '@argos-ci/util': 3.3.0
+      convict: 6.2.4
+      debug: 4.4.3
+      fast-glob: 3.3.3
+      mime-types: 3.0.2
+      sharp: 0.34.5
+      tmp: 0.2.5
+    transitivePeerDependencies:
+      - supports-color
+
+  '@argos-ci/playwright@6.5.0':
     dependencies:
       '@argos-ci/browser': 5.1.2
-      '@argos-ci/core': 5.1.1
-      '@argos-ci/util': 3.2.0
+      '@argos-ci/core': 5.1.2
+      '@argos-ci/util': 3.3.0
       chalk: 5.6.2
       debug: 4.4.3
     transitivePeerDependencies:
       - supports-color
 
   '@argos-ci/util@3.2.0': {}
+
+  '@argos-ci/util@3.3.0': {}
 
   '@astrojs/compiler@2.13.0': {}
 
