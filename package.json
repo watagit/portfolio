@@ -17,12 +17,12 @@
     "argos": "argos"
   },
   "dependencies": {
-    "@tailwindcss/postcss": "4.2.1",
+    "@tailwindcss/postcss": "4.2.2",
     "@types/node": "22.19.15",
     "astro": "5.18.1",
     "postcss": "8.5.8",
     "sharp": "0.34.5",
-    "tailwindcss": "4.2.1",
+    "tailwindcss": "4.2.2",
     "typescript": "5.9.3"
   },
   "devDependencies": {
