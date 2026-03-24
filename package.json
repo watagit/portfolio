@@ -28,7 +28,7 @@
   "devDependencies": {
     "@argos-ci/cli": "^4.1.1",
     "@argos-ci/playwright": "^6.5.0",
-    "@biomejs/biome": "2.4.7",
+    "@biomejs/biome": "2.4.8",
     "@markuplint/jsx-parser": "4.7.23",
     "@markuplint/react-spec": "4.5.23",
     "@playwright/test": "^1.58.2",
