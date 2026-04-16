@@ -17,7 +17,7 @@ jobs:
     steps:
       - name: PR番号を取得
         id: get-pr
-        uses: actions/github-script@v8
+        uses: actions/github-script@v9
         with:
           script: |
             const prs = await github.rest.pulls.list({
@@ -35,7 +35,7 @@ jobs:
 
       - name: レビュワーをアサイン
         if: steps.get-pr.outputs.is_renovate == 'true'
-        uses: actions/github-script@v8
+        uses: actions/github-script@v9
         with:
           script: |
             await github.rest.pulls.requestReviewers({
