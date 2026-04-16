@@ -18,8 +18,8 @@ importers:
         specifier: 6.0.8
         version: 6.0.8(@types/node@22.19.17)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.53.3)(terser@5.44.0)(typescript@5.9.3)(yaml@2.8.2)
       postcss:
-        specifier: 8.5.8
-        version: 8.5.8
+        specifier: 8.5.10
+        version: 8.5.10
       sharp:
         specifier: 0.34.5
         version: 0.34.5
@@ -2021,8 +2021,8 @@ packages:
     resolution: {integrity: sha512-orRsuYpJVw8LdAwqqLykBj9ecS5/cRHlI5+nvTo8LcCKmzDmqVORXtOIYEEQuL9D4BxtA1lm5isAqzQZCoQ6Eg==}
     engines: {node: '>=4'}
 
-  postcss@8.5.8:
-    resolution: {integrity: sha512-OW/rX8O/jXnm82Ey1k44pObPtdblfiuWnrd8X7GJ7emImCOstunGbXUpp7HdBrFQX6rJzn3sPT397Wp5aCwCHg==}
+  postcss@8.5.10:
+    resolution: {integrity: sha512-pMMHxBOZKFU6HgAZ4eyGnwXF/EvPGGqUr0MnZ5+99485wwW41kW91A4LOGxSHhgugZmSChL5AlElNdwlNgcnLQ==}
     engines: {node: ^10 || ^12 || >=14}
 
   prismjs@1.30.0:
@@ -3317,7 +3317,7 @@ snapshots:
       '@alloc/quick-lru': 5.2.0
       '@tailwindcss/node': 4.2.2
       '@tailwindcss/oxide': 4.2.2
-      postcss: 8.5.8
+      postcss: 8.5.10
       tailwindcss: 4.2.2
 
   '@types/css-tree@2.3.11': {}
@@ -4724,7 +4724,7 @@ snapshots:
       cssesc: 3.0.0
       util-deprecate: 1.0.2
 
-  postcss@8.5.8:
+  postcss@8.5.10:
     dependencies:
       nanoid: 3.3.11
       picocolors: 1.1.1
@@ -5208,7 +5208,7 @@ snapshots:
       esbuild: 0.27.3
       fdir: 6.5.0(picomatch@4.0.3)
       picomatch: 4.0.3
-      postcss: 8.5.8
+      postcss: 8.5.10
       rollup: 4.53.3
       tinyglobby: 0.2.15
     optionalDependencies:
