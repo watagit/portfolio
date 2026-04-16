@@ -31,8 +31,8 @@ importers:
         version: 5.9.3
     devDependencies:
       '@argos-ci/cli':
-        specifier: ^4.1.2
-        version: 4.1.2
+        specifier: ^4.1.4
+        version: 4.1.4
       '@argos-ci/playwright':
         specifier: ^6.5.0
         version: 6.5.0
@@ -65,17 +65,25 @@ packages:
     resolution: {integrity: sha512-BG6g+AZABKN8W2syzfPWKhPxxrAB9Wjp2iNS11R4IskHDV6T41+qeQDpT88GOq6eUZ64Sjzoh/nXG+9EpNxtfw==}
     engines: {node: '>=20.0.0'}
 
+  '@argos-ci/api-client@0.17.0':
+    resolution: {integrity: sha512-z74ZdqT46+sirGlJUXXn1vhZZshUU50bRLfeVCeHilEf585N8GG7demF4vtY+dp226jGqSf+CkgBfg/O48AxAA==}
+    engines: {node: '>=20.0.0'}
+
   '@argos-ci/browser@5.1.2':
     resolution: {integrity: sha512-eQqtM54Vh83++Dac5+7ml4YXKW/KnUHRQWjTZ+VGeXfOJdjnZa4JjfVL6fnFG6CKrXjCK5dd9gcZRmbVpbt8rA==}
     engines: {node: '>=20.0.0'}
 
-  '@argos-ci/cli@4.1.2':
-    resolution: {integrity: sha512-qOkjNRBWzJnvpxj7pv4NeEP5qlYs91yjPZYoe1vCF9ihoRzY7IifzROrec9nmR7dCZQ9Nw0VE6BzRUN7R2x11A==}
+  '@argos-ci/cli@4.1.4':
+    resolution: {integrity: sha512-hOW3WmZDC783AwKPjbnGwN6NuHuodl4BSZEdtQaKTTS/dWFdKclp9to7aXM2h4H9DBbXozcbdkLvq3JjG7H9Qg==}
     engines: {node: '>=20.0.0'}
     hasBin: true
 
   '@argos-ci/core@5.1.2':
     resolution: {integrity: sha512-CIZWhd3JFgjaA8OGhraYS5UbJnBz2ZwaP3zpkF8xuDVvpsn92OgQACAtXszzAEjXNoHBXutTwCeedS89vAjUqQ==}
+    engines: {node: '>=20.0.0'}
+
+  '@argos-ci/core@5.2.0':
+    resolution: {integrity: sha512-DUTcNf8VFtlZj2h2qH1GP7lvDiaX4v+rZs/SQA2uAQp4J6Oapl40D90O4Hum8XZt1kaKC5BrxeDAohomH/plkA==}
     engines: {node: '>=20.0.0'}
 
   '@argos-ci/playwright@6.5.0':
@@ -84,6 +92,10 @@ packages:
 
   '@argos-ci/util@3.3.0':
     resolution: {integrity: sha512-TeLTLCR4wiN+OqXPKeXvbgjIURNN4s9pLR3759lEVxWu7uUFKoWUFxewM2hHiCZ/A9FRJv4dSiKObpbOLHo3aw==}
+    engines: {node: '>=20.0.0'}
+
+  '@argos-ci/util@3.4.0':
+    resolution: {integrity: sha512-rPa8xu6k0TkK1V4CIapcx2x/ncB7dvGa0adXCkflQf+rZZvZaVI3jCVXR57bCZn+S5AWndj4+A/7pX5xV9krvQ==}
     engines: {node: '>=20.0.0'}
 
   '@astrojs/compiler@3.0.1':
@@ -1094,6 +1106,10 @@ packages:
     resolution: {integrity: sha512-qN60BAwdMVdofckX7AlohVJ2x9UvjTNoKVXCL2LxFk1l7757EJqf1nySdMkPQer0bt8kQ5lQiyZ9/2NvrFBuwQ==}
     engines: {node: '>=6'}
 
+  convict@6.2.5:
+    resolution: {integrity: sha512-JtXpxqDqJ8P0UwEHwhxLzCIXQy97vlYBZR222Sbzb1q1Erex9ASrztJ29SyhWFQjod1AeFBaPzEEC8YvtZMIYg==}
+    engines: {node: '>=6'}
+
   cookie-es@1.2.2:
     resolution: {integrity: sha512-+W7VmiVINB+ywl1HGXJXmrqkOhpKrIiVZV6tQuV54ZyQC7MMuBt81Vc336GMLoHBq5hV/F9eXgt5Mnx0Rha5Fg==}
 
@@ -1925,8 +1941,14 @@ packages:
   openapi-fetch@0.15.2:
     resolution: {integrity: sha512-rdYTzUmSsJevmNqg7fwUVGuKc2Gfb9h6ph74EVPkPfIGJaZTfqdIbJahtbJ3qg1LKinln30hqZniLnKpH0RJBg==}
 
+  openapi-fetch@0.17.0:
+    resolution: {integrity: sha512-PsbZR1wAPcG91eEthKhN+Zn92FMHxv+/faECIwjXdxfTODGSGegYv0sc1Olz+HYPvKOuoXfp+0pA2XVt2cI0Ig==}
+
   openapi-typescript-helpers@0.0.15:
     resolution: {integrity: sha512-opyTPaunsklCBpTK8JGef6mfPhLSnyy5a0IN9vKtx3+4aExf+KxEqYwIy3hqkedXIB97u357uLMJsOnm3GVjsw==}
+
+  openapi-typescript-helpers@0.1.0:
+    resolution: {integrity: sha512-OKTGPthhivLw/fHz6c3OPtg72vi86qaMlqbJuVJ23qOvQ+53uw1n7HdmkJFibloF7QEjDrDkzJiOJuockM/ljw==}
 
   ora@9.3.0:
     resolution: {integrity: sha512-lBX72MWFduWEf7v7uWf5DHp9Jn5BI8bNPGuFgtXMmr2uDz2Gz2749y3am3agSDdkhHPHYmmxEGSKH85ZLGzgXw==}
@@ -2577,11 +2599,18 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  '@argos-ci/api-client@0.17.0':
+    dependencies:
+      debug: 4.4.3
+      openapi-fetch: 0.17.0
+    transitivePeerDependencies:
+      - supports-color
+
   '@argos-ci/browser@5.1.2': {}
 
-  '@argos-ci/cli@4.1.2':
+  '@argos-ci/cli@4.1.4':
     dependencies:
-      '@argos-ci/core': 5.1.2
+      '@argos-ci/core': 5.2.0
       commander: 14.0.3
       ora: 9.3.0
       update-notifier: 7.3.1
@@ -2601,6 +2630,19 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  '@argos-ci/core@5.2.0':
+    dependencies:
+      '@argos-ci/api-client': 0.17.0
+      '@argos-ci/util': 3.4.0
+      convict: 6.2.5
+      debug: 4.4.3
+      fast-glob: 3.3.3
+      mime-types: 3.0.2
+      sharp: 0.34.5
+      tmp: 0.2.5
+    transitivePeerDependencies:
+      - supports-color
+
   '@argos-ci/playwright@6.5.0':
     dependencies:
       '@argos-ci/browser': 5.1.2
@@ -2612,6 +2654,8 @@ snapshots:
       - supports-color
 
   '@argos-ci/util@3.3.0': {}
+
+  '@argos-ci/util@3.4.0': {}
 
   '@astrojs/compiler@3.0.1': {}
 
@@ -3379,7 +3423,7 @@ snapshots:
       '@typescript-eslint/visitor-keys': 8.54.0
       debug: 4.4.3
       minimatch: 9.0.5
-      semver: 7.7.3
+      semver: 7.7.4
       tinyglobby: 0.2.15
       ts-api-utils: 2.4.0(typescript@5.9.3)
       typescript: 5.9.3
@@ -3613,6 +3657,11 @@ snapshots:
       xdg-basedir: 5.1.0
 
   convict@6.2.4:
+    dependencies:
+      lodash.clonedeep: 4.5.0
+      yargs-parser: 20.2.9
+
+  convict@6.2.5:
     dependencies:
       lodash.clonedeep: 4.5.0
       yargs-parser: 20.2.9
@@ -4622,7 +4671,13 @@ snapshots:
     dependencies:
       openapi-typescript-helpers: 0.0.15
 
+  openapi-fetch@0.17.0:
+    dependencies:
+      openapi-typescript-helpers: 0.1.0
+
   openapi-typescript-helpers@0.0.15: {}
+
+  openapi-typescript-helpers@0.1.0: {}
 
   ora@9.3.0:
     dependencies:
@@ -4655,7 +4710,7 @@ snapshots:
       ky: 1.14.3
       registry-auth-token: 5.1.1
       registry-url: 6.0.1
-      semver: 7.7.3
+      semver: 7.7.4
 
   package-manager-detector@1.6.0: {}
 
@@ -5181,7 +5236,7 @@ snapshots:
       is-npm: 6.1.0
       latest-version: 9.0.0
       pupa: 3.3.0
-      semver: 7.7.3
+      semver: 7.7.4
       xdg-basedir: 5.1.0
 
   util-deprecate@1.0.2: {}
