@@ -15,8 +15,8 @@ importers:
         specifier: 22.19.19
         version: 22.19.19
       astro:
-        specifier: 6.3.3
-        version: 6.3.3(@types/node@22.19.19)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.53.3)(terser@5.44.0)(yaml@2.8.2)
+        specifier: 6.3.8
+        version: 6.3.8(@types/node@22.19.19)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.53.3)(terser@5.44.0)(yaml@2.8.2)
       postcss:
         specifier: 8.5.15
         version: 8.5.15
@@ -968,8 +968,8 @@ packages:
   array-iterate@2.0.1:
     resolution: {integrity: sha512-I1jXZMjAgCMmxT4qxXfPXa6SthSoE8h6gkSI9BGGNv8mP8G/v0blc+qFnZu6K42vTOiuME596QaLO0TP3Lk0xg==}
 
-  astro@6.3.3:
-    resolution: {integrity: sha512-wvLIZQYbBZt6U8gyflBW4SLBypaqdwLZUH93rT3oT53cmQ0bTGubvMAGjqBRoheOYzYcTJZtW6czztzbu4kQ5g==}
+  astro@6.3.8:
+    resolution: {integrity: sha512-xH2UA8Z17IS+JaqSlSkBor7jO6gd7zXTLdmu06nKpfpDDJFbi/7KZEy3NDmWxmier+6XrCZ9Z4aitO8jhC9oiA==}
     engines: {node: '>=22.12.0', npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -3453,7 +3453,7 @@ snapshots:
 
   array-iterate@2.0.1: {}
 
-  astro@6.3.3(@types/node@22.19.19)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.53.3)(terser@5.44.0)(yaml@2.8.2):
+  astro@6.3.8(@types/node@22.19.19)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.53.3)(terser@5.44.0)(yaml@2.8.2):
     dependencies:
       '@astrojs/compiler': 4.0.0
       '@astrojs/internal-helpers': 0.9.1
