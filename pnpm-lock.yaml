@@ -31,8 +31,8 @@ importers:
         specifier: ^6.6.1
         version: 6.6.1(@types/node@22.20.1)
       '@argos-ci/playwright':
-        specifier: ^7.4.3
-        version: 7.4.3(@types/node@22.20.1)
+        specifier: ^7.4.6
+        version: 7.4.6(@types/node@22.20.1)
       '@biomejs/biome':
         specifier: 2.5.8
         version: 2.5.8
@@ -58,6 +58,10 @@ packages:
     resolution: {integrity: sha512-VQjt/WohF49NNXVGBNctMAqHV+mTBL+gE2oa+Sxg7cRdjGY01JO4nBqy0mhNWJ0VUuGsWohyhzrQYHhx35L7PA==}
     engines: {node: '>=22.0.0'}
 
+  '@argos-ci/api-client@0.31.0':
+    resolution: {integrity: sha512-7EdoiHRc4BvuDxp6/8CbkehCMu5bFYEJPjssYFvOR5FqCq50hT9+GxDuQ4pULpbXUZOVl1vhZ4b8ed4fe7rVCQ==}
+    engines: {node: '>=22.0.0'}
+
   '@argos-ci/browser@6.4.5':
     resolution: {integrity: sha512-8qWtsOXG752VTAI6iPeHZyMKLSqN9jqdAqZZMk0Q4+j5WSPX76K5a3feV8nBlSqpr1O4RP2/GWYVoxkGdzJr3w==}
     engines: {node: '>=22.0.0'}
@@ -71,8 +75,12 @@ packages:
     resolution: {integrity: sha512-/hKfytEru+xebSt4OctjuIHwOPWFwchsDGR/Odcaszbf6sUcxMzu3IrSj/PDC0FD/hYiUCDTPDsYPfxf564sMg==}
     engines: {node: '>=22.0.0'}
 
-  '@argos-ci/playwright@7.4.3':
-    resolution: {integrity: sha512-qD0ixfr2BmUT4iRT0j55OZ4T1gTgI6YE3BTC2sJwakMYtaQFuAwyIge87HoVHaK4hCF1u+JyqkDqe+3cg8xUmA==}
+  '@argos-ci/core@6.8.1':
+    resolution: {integrity: sha512-SY5dU/Rtxux0Biy0gd4zY36fClz3xekrgdaBCZv0+Pnvbuy9STNPaV8JjWfA5fu+vEORCOghcYvQwqwhRWbOSQ==}
+    engines: {node: '>=22.0.0'}
+
+  '@argos-ci/playwright@7.4.6':
+    resolution: {integrity: sha512-ocFVdFl/o+M3c/3SuZJ1ChlmVfIKoK0EX6iJbYLqM3wxrHiltB/c9aFRuepjawwvjnMGgwXMaMONhMF2Op+/Sw==}
     engines: {node: '>=22.0.0'}
 
   '@argos-ci/util@4.1.0':
@@ -2516,6 +2524,14 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  '@argos-ci/api-client@0.31.0':
+    dependencies:
+      debug: 4.4.3
+      openapi-fetch: 0.17.0
+      p-retry: 8.0.0
+    transitivePeerDependencies:
+      - supports-color
+
   '@argos-ci/browser@6.4.5': {}
 
   '@argos-ci/cli@6.6.1(@types/node@22.20.1)':
@@ -2544,10 +2560,25 @@ snapshots:
       - '@types/node'
       - supports-color
 
-  '@argos-ci/playwright@7.4.3(@types/node@22.20.1)':
+  '@argos-ci/core@6.8.1(@types/node@22.20.1)':
+    dependencies:
+      '@argos-ci/api-client': 0.31.0
+      '@argos-ci/util': 4.1.0
+      convict: 6.2.5
+      debug: 4.4.3
+      fast-glob: 3.3.3
+      mime-types: 3.0.2
+      p-retry: 8.0.0
+      sharp: 0.35.3(@types/node@22.20.1)
+      tmp: 0.2.7
+    transitivePeerDependencies:
+      - '@types/node'
+      - supports-color
+
+  '@argos-ci/playwright@7.4.6(@types/node@22.20.1)':
     dependencies:
       '@argos-ci/browser': 6.4.5
-      '@argos-ci/core': 6.7.2(@types/node@22.20.1)
+      '@argos-ci/core': 6.8.1(@types/node@22.20.1)
       '@argos-ci/util': 4.1.0
       chalk: 6.0.0
       debug: 4.4.3
