@@ -31,8 +31,8 @@ importers:
         specifier: ^6.9.1
         version: 6.9.1(@types/node@22.20.1)(supports-color@7.2.0)
       '@argos-ci/playwright':
-        specifier: ^7.4.6
-        version: 7.4.6(@types/node@22.20.1)(supports-color@7.2.0)
+        specifier: ^7.4.7
+        version: 7.4.7(@types/node@22.20.1)(supports-color@7.2.0)
       '@biomejs/biome':
         specifier: 2.5.11
         version: 2.5.11
@@ -67,16 +67,12 @@ packages:
     engines: {node: '>=22.0.0'}
     hasBin: true
 
-  '@argos-ci/core@6.8.1':
-    resolution: {integrity: sha512-SY5dU/Rtxux0Biy0gd4zY36fClz3xekrgdaBCZv0+Pnvbuy9STNPaV8JjWfA5fu+vEORCOghcYvQwqwhRWbOSQ==}
-    engines: {node: '>=22.0.0'}
-
   '@argos-ci/core@6.8.2':
     resolution: {integrity: sha512-EX0m1QsXqRk0+FyJlw0YBfjIbbSCaxAqvGxYrHH0NoBjUouLsMODnjO8jAbkCPZRPIqVu390vOLyK/W+USkNWA==}
     engines: {node: '>=22.0.0'}
 
-  '@argos-ci/playwright@7.4.6':
-    resolution: {integrity: sha512-ocFVdFl/o+M3c/3SuZJ1ChlmVfIKoK0EX6iJbYLqM3wxrHiltB/c9aFRuepjawwvjnMGgwXMaMONhMF2Op+/Sw==}
+  '@argos-ci/playwright@7.4.7':
+    resolution: {integrity: sha512-wmWv2D8Tb9sEdn3i29/67TwBCdo7M5am71HriX+cXx8ZByLxyMqKJKGp34ZTAXv+uzNHpUanyGm9P3UKkturYQ==}
     engines: {node: '>=22.0.0'}
 
   '@argos-ci/util@4.1.0':
@@ -2565,7 +2561,7 @@ snapshots:
       - '@types/node'
       - supports-color
 
-  '@argos-ci/core@6.8.1(@types/node@22.20.1)(supports-color@7.2.0)':
+  '@argos-ci/core@6.8.2(@types/node@22.20.1)(supports-color@7.2.0)':
     dependencies:
       '@argos-ci/api-client': 0.31.0(supports-color@7.2.0)
       '@argos-ci/util': 4.1.0
@@ -2580,25 +2576,10 @@ snapshots:
       - '@types/node'
       - supports-color
 
-  '@argos-ci/core@6.8.2(@types/node@22.20.1)(supports-color@7.2.0)':
-    dependencies:
-      '@argos-ci/api-client': 0.31.0(supports-color@7.2.0)
-      '@argos-ci/util': 4.1.0
-      convict: 6.2.5
-      debug: 4.4.3(supports-color@7.2.0)
-      fast-glob: 3.3.3
-      mime-types: 3.0.2
-      p-retry: 8.0.0
-      sharp: 0.35.3(@types/node@22.20.1)
-      tmp: 0.2.7
-    transitivePeerDependencies:
-      - '@types/node'
-      - supports-color
-
-  '@argos-ci/playwright@7.4.6(@types/node@22.20.1)(supports-color@7.2.0)':
+  '@argos-ci/playwright@7.4.7(@types/node@22.20.1)(supports-color@7.2.0)':
     dependencies:
       '@argos-ci/browser': 6.4.5
-      '@argos-ci/core': 6.8.1(@types/node@22.20.1)(supports-color@7.2.0)
+      '@argos-ci/core': 6.8.2(@types/node@22.20.1)(supports-color@7.2.0)
       '@argos-ci/util': 4.1.0
       chalk: 6.0.0
       debug: 4.4.3(supports-color@7.2.0)
