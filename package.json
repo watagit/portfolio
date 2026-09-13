@@ -28,7 +28,7 @@
     "@argos-ci/cli": "^6.9.3",
     "@argos-ci/playwright": "^7.5.1",
     "@biomejs/biome": "2.5.13",
-    "@markuplint/jsx-parser": "4.18.3",
+    "@markuplint/jsx-parser": "5.0.0",
     "@markuplint/react-spec": "4.18.0",
     "@playwright/test": "^1.63.0",
     "markuplint": "4.18.3",
