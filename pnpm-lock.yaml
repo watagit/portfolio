@@ -198,8 +198,8 @@ importers:
         specifier: 5.0.0
         version: 5.0.0(supports-color@7.2.0)(typescript@7.0.2)
       '@markuplint/react-spec':
-        specifier: 4.18.0
-        version: 4.18.0(supports-color@7.2.0)
+        specifier: 5.0.0
+        version: 5.0.0(supports-color@7.2.0)
       '@playwright/test':
         specifier: ^1.63.0
         version: 1.63.0
@@ -855,8 +855,9 @@ packages:
     resolution: {integrity: sha512-vjpYcTeDVZZYFpVrHRoJn4Kc1NQ5xptGbEnwjboF2y4ZVChp+21Z8+eb/dek1Uv+aRxb3khpd2CPM/V8NY/b9A==}
     engines: {node: '>=24'}
 
-  '@markuplint/react-spec@4.18.0':
-    resolution: {integrity: sha512-ecQGaLEzXnZ+Es7TPkHFdwWv0PMxE0K9Sz+Xvt0LZyZFLkIm4o/UJAUGA/rvXNFPCnfgErPjvAClXpoIo7W40Q==}
+  '@markuplint/react-spec@5.0.0':
+    resolution: {integrity: sha512-4Yqe1NGv+kV7Nc0vsIgjTvVox3koWj6z6zZ06vysE5h+jHBdKcw7AEfEFVYSU7nYSyGgjWnlAr7lVopNlUmIuQ==}
+    engines: {node: '>=24'}
 
   '@markuplint/rules@4.18.3':
     resolution: {integrity: sha512-4s0sfMPy3qOszTBV5qeNcUvxbfa6BR6mPYtJnU6Upi3dWMYNASkpKyRmrgIhj33OUKJtSZVQrw9Qv16RHXwA1Q==}
@@ -3298,9 +3299,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@markuplint/react-spec@4.18.0(supports-color@7.2.0)':
+  '@markuplint/react-spec@5.0.0(supports-color@7.2.0)':
     dependencies:
-      '@markuplint/ml-spec': 4.18.0(supports-color@7.2.0)
+      '@markuplint/ml-spec': 5.0.0(supports-color@7.2.0)
     transitivePeerDependencies:
       - supports-color
 
