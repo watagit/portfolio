@@ -31,7 +31,7 @@
     "@markuplint/jsx-parser": "5.0.0",
     "@markuplint/react-spec": "5.0.0",
     "@playwright/test": "^1.63.0",
-    "markuplint": "4.18.3",
+    "markuplint": "5.0.0",
     "npm-run-all2": "9.0.3"
   },
   "engines": {
