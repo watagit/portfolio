@@ -195,8 +195,8 @@ importers:
         specifier: 2.5.14
         version: 2.5.14
       '@markuplint/jsx-parser':
-        specifier: 5.0.0
-        version: 5.0.0(supports-color@7.2.0)(typescript@7.0.2)
+        specifier: 5.0.1
+        version: 5.0.1(supports-color@7.2.0)(typescript@7.0.2)
       '@markuplint/react-spec':
         specifier: 5.0.1
         version: 5.0.1(supports-color@7.2.0)
@@ -890,6 +890,10 @@ packages:
     resolution: {integrity: sha512-vszV287nrMEkrTRoWZ9pOy6TgLRyiC0p7spG7WZVIrBP4YgYlzsaPSUWIzmp2Sdv8lQKygmiAJQ6ZR7UxzFv2Q==}
     engines: {node: '>=24'}
 
+  '@markuplint/html-parser@5.0.1':
+    resolution: {integrity: sha512-p9N5d7dBbac6bbQgt9t8AWMnICUOzRAiB2fvUo+IRl3b/yfmo5zJb35bc2uHuHraAOieQQWnyInmoEyb2eV3mw==}
+    engines: {node: '>=24'}
+
   '@markuplint/html-spec@5.0.0':
     resolution: {integrity: sha512-MS/WMf86oJlbnkVZ8mjz6lFW+FYk3iHJezEjjtbdbvT+SsnOYNOuGpiPgwYVz5zaTfm0LEK8aM0upaG4gxmgqA==}
     engines: {node: '>=24'}
@@ -898,8 +902,8 @@ packages:
     resolution: {integrity: sha512-+Y/8BL8W0Ope/jqhWKevNtuGOuimp74osaAAEE5+iXytO4++i6nlE7s7E+KvwYI6MpIXRFbildYPyI6nxIjhhg==}
     engines: {node: '>=24'}
 
-  '@markuplint/jsx-parser@5.0.0':
-    resolution: {integrity: sha512-LIZE17VMXuyWbeeBMu8A92KkrH0DAq5MHQltG4wlxoHYOOZ3P1VTHmKmGPYeKWOljQlmzdQs5G5arylAjteJgQ==}
+  '@markuplint/jsx-parser@5.0.1':
+    resolution: {integrity: sha512-mIAGVtw8uqE5h3iRfIrFvkS9nw/1WI3KFD7LMFGxtBgh0PjUjC9Y0/Ds0r6cAeJSrYFBB2YwpA0CpAym9Ciphw==}
     engines: {node: '>=24'}
 
   '@markuplint/ml-ast@5.0.0':
@@ -928,6 +932,10 @@ packages:
 
   '@markuplint/parser-utils@5.0.0':
     resolution: {integrity: sha512-vjpYcTeDVZZYFpVrHRoJn4Kc1NQ5xptGbEnwjboF2y4ZVChp+21Z8+eb/dek1Uv+aRxb3khpd2CPM/V8NY/b9A==}
+    engines: {node: '>=24'}
+
+  '@markuplint/parser-utils@5.0.1':
+    resolution: {integrity: sha512-w6MWfX54nr2ZD0nuiKy7vV692bOSGLNpAJ12yRyaGpDjg9RJXbJNeORbHhpW3s6BPRoqAX2/eAzI61cUYmDtNw==}
     engines: {node: '>=24'}
 
   '@markuplint/pretenders@5.0.0':
@@ -3658,6 +3666,15 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  '@markuplint/html-parser@5.0.1(supports-color@7.2.0)':
+    dependencies:
+      '@markuplint/ml-ast': 5.0.1
+      '@markuplint/parser-utils': 5.0.1(supports-color@7.2.0)
+      parse5: 8.0.1
+      type-fest: 5.6.0
+    transitivePeerDependencies:
+      - supports-color
+
   '@markuplint/html-spec@5.0.0(supports-color@7.2.0)':
     dependencies:
       '@markuplint/ml-spec': 5.0.0(supports-color@7.2.0)
@@ -3666,11 +3683,11 @@ snapshots:
 
   '@markuplint/i18n@5.0.0': {}
 
-  '@markuplint/jsx-parser@5.0.0(supports-color@7.2.0)(typescript@7.0.2)':
+  '@markuplint/jsx-parser@5.0.1(supports-color@7.2.0)(typescript@7.0.2)':
     dependencies:
-      '@markuplint/html-parser': 5.0.0(supports-color@7.2.0)
-      '@markuplint/ml-ast': 5.0.0
-      '@markuplint/parser-utils': 5.0.0(supports-color@7.2.0)
+      '@markuplint/html-parser': 5.0.1(supports-color@7.2.0)
+      '@markuplint/ml-ast': 5.0.1
+      '@markuplint/parser-utils': 5.0.1(supports-color@7.2.0)
       '@typescript-eslint/types': 8.59.0
       '@typescript-eslint/typescript-estree': 8.59.0(supports-color@7.2.0)(typescript@7.0.2)
     transitivePeerDependencies:
@@ -3737,6 +3754,18 @@ snapshots:
       '@markuplint/ml-spec': 5.0.0(supports-color@7.2.0)
       '@markuplint/shared': 5.0.0
       '@markuplint/types': 5.0.0(supports-color@7.2.0)
+      debug: 4.4.3(supports-color@7.2.0)
+      espree: 11.2.0
+      type-fest: 5.6.0
+    transitivePeerDependencies:
+      - supports-color
+
+  '@markuplint/parser-utils@5.0.1(supports-color@7.2.0)':
+    dependencies:
+      '@markuplint/ml-ast': 5.0.1
+      '@markuplint/ml-spec': 5.0.1(supports-color@7.2.0)
+      '@markuplint/shared': 5.0.1
+      '@markuplint/types': 5.0.1(supports-color@7.2.0)
       debug: 4.4.3(supports-color@7.2.0)
       espree: 11.2.0
       type-fest: 5.6.0
@@ -4113,7 +4142,7 @@ snapshots:
   '@typescript-eslint/project-service@8.59.0(supports-color@7.2.0)(typescript@7.0.2)':
     dependencies:
       '@typescript-eslint/tsconfig-utils': 8.59.0(typescript@7.0.2)
-      '@typescript-eslint/types': 8.59.0
+      '@typescript-eslint/types': 8.70.0
       debug: 4.4.3(supports-color@7.2.0)
       typescript: 7.0.2
     transitivePeerDependencies:
@@ -4131,8 +4160,7 @@ snapshots:
 
   '@typescript-eslint/types@8.59.0': {}
 
-  '@typescript-eslint/types@8.70.0':
-    optional: true
+  '@typescript-eslint/types@8.70.0': {}
 
   '@typescript-eslint/typescript-estree@8.59.0(supports-color@7.2.0)(typescript@7.0.2)':
     dependencies:
