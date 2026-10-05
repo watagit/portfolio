@@ -25,7 +25,7 @@
     "typescript": "7.0.2"
   },
   "devDependencies": {
-    "@argos-ci/cli": "^6.9.5",
+    "@argos-ci/cli": "^6.9.6",
     "@argos-ci/playwright": "^7.7.0",
     "@biomejs/biome": "2.5.15",
     "@markuplint/jsx-parser": "5.0.1",
