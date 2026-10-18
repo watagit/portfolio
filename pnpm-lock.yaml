@@ -195,8 +195,8 @@ importers:
         specifier: 2.5.15
         version: 2.5.15
       '@markuplint/jsx-parser':
-        specifier: 5.1.1
-        version: 5.1.1(typescript@7.0.2)
+        specifier: 5.2.0
+        version: 5.2.0(typescript@7.0.2)
       '@markuplint/react-spec':
         specifier: 5.2.0
         version: 5.2.0
@@ -757,6 +757,10 @@ packages:
     resolution: {integrity: sha512-iCgBq7CBcB/FjGDgVW2mEdjz/kJPbIQymvdeRABFRHPL6Qs4FNtsq3mvhGfLJ/dhkMjhsa56Txuj1MLTPgeqRg==}
     engines: {node: '>=24'}
 
+  '@markuplint/html-parser@5.2.0':
+    resolution: {integrity: sha512-7OKIR1ww/dvDeQAz+t0EMQXLgc3vYmhV2wnZH0V6VFV8oBR96dXoJ+A1PRmY1m71C7vX3MnGgwBay72BED1mBg==}
+    engines: {node: '>=24'}
+
   '@markuplint/html-spec@5.1.1':
     resolution: {integrity: sha512-sqpHP5wbsAKkCUWLxrN/6wlN1++i4KhAtdG96uO+nOx0tV4v6apweOwVyurSpYHuZioUcFOpfo8UR4pUOtXAXA==}
     engines: {node: '>=24'}
@@ -765,8 +769,8 @@ packages:
     resolution: {integrity: sha512-rIuxvRk3yHp07GIUc2cVqkeCmgMG6yb///Tb3H20ZH4ogqxL0WJ0i8dU43qSap1ZYgTxbCxU5WXYTarXQNAGlg==}
     engines: {node: '>=24'}
 
-  '@markuplint/jsx-parser@5.1.1':
-    resolution: {integrity: sha512-MxZzIGF9zBFFAEaeA5/2POJ8YI+ypcByWw1/hchb+yw+Q07r428ieOrQ98WwtWdKXfNdRfcFGV2F4AKcjIDBcQ==}
+  '@markuplint/jsx-parser@5.2.0':
+    resolution: {integrity: sha512-on/ixqIagm6tHY5xS/evVXg3DLWDHOXsb4qLzHgiPsr09OsqGL9OTtY1t4un4gjFDfNrBa3QLAv01zdESK+xYA==}
     engines: {node: '>=24'}
 
   '@markuplint/ml-ast@5.1.1':
@@ -791,6 +795,10 @@ packages:
 
   '@markuplint/parser-utils@5.1.1':
     resolution: {integrity: sha512-zHLK06WcekuCjomcdERsWU1/bxji8qTZBrO5qZYbVW8fE1p9CuWOgMF4YlbN557mVn43wBo6ZD4lSP2sXts+UA==}
+    engines: {node: '>=24'}
+
+  '@markuplint/parser-utils@5.2.0':
+    resolution: {integrity: sha512-+fMqSoVyRRSYqLVD1pkws1JhltozINGWxaDoD2JNEb7iDT9c4p8uOjtdng6RRnqpTPT4kLFHIbIRk7ydwbpNdA==}
     engines: {node: '>=24'}
 
   '@markuplint/pretenders@5.1.1':
@@ -1145,8 +1153,8 @@ packages:
   '@types/unist@3.0.3':
     resolution: {integrity: sha512-ko/gIFJRv177XgZsZcBwnqJN5x/Gien8qNOn0D5bQU/zAzVf9Zt3BlcUiLqhV9y4ARk0GbT3tnUiPNgnTXzc/Q==}
 
-  '@typescript-eslint/project-service@8.59.0':
-    resolution: {integrity: sha512-Lw5ITrR5s5TbC19YSvlr63ZfLaJoU6vtKTHyB0GQOpX0W7d5/Ir6vUahWi/8Sps/nOukZQ0IB3SmlxZnjaKVnw==}
+  '@typescript-eslint/project-service@8.71.1':
+    resolution: {integrity: sha512-Oijc9RUsohHjncg6iGi7gCtjnEjYt9FWv9u6ygK8uKcHK5eLjLAkqERQ9BaytbpceOFdk6kifPCS/zAZE+A99g==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       typescript: '>=4.8.4 <6.1.0'
@@ -1155,29 +1163,21 @@ packages:
     resolution: {integrity: sha512-1YUDZXdTnXLlob03SFHBipdyMBsDVm7zoSz0ytTJ39dk5J1TgsTK03VlR/dLXG/RLLUrPcYbD4rp23BmHxHP0w==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@typescript-eslint/tsconfig-utils@8.59.0':
-    resolution: {integrity: sha512-91Sbl3s4Kb3SybliIY6muFBmHVv+pYXfybC4Oolp3dvk8BvIE3wOPc+403CWIT7mJNkfQRGtdqghzs2+Z91Tqg==}
+  '@typescript-eslint/tsconfig-utils@8.71.1':
+    resolution: {integrity: sha512-oTvkml5SxXhgg+WWKhod5qWQICDXtOB+/Hi9VdPKFAANJ2b7YOgMffgvzXuqog7R6A/JtrzRf128dsxummyWhg==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       typescript: '>=4.8.4 <6.1.0'
-
-  '@typescript-eslint/types@8.59.0':
-    resolution: {integrity: sha512-nLzdsT1gdOgFxxxwrlNVUBzSNBEEHJ86bblmk4QAS6stfig7rcJzWKqCyxFy3YRRHXDWEkb2NralA1nOYkkm/A==}
-    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
   '@typescript-eslint/types@8.71.1':
     resolution: {integrity: sha512-ybYnPTUwg3VQQOFEiBPLs8Jxl1ry2vXdn1kVKguomBbvxpetdu3MKTNDqFNUrlG8ylP9MpZosmXMFYlGQHk1oQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@typescript-eslint/typescript-estree@8.59.0':
-    resolution: {integrity: sha512-O9Re9P1BmBLFJyikRbQpLku/QA3/AueZNO9WePLBwQrvkixTmDe8u76B6CYUAITRl/rHawggEqUGn5QIkVRLMw==}
+  '@typescript-eslint/typescript-estree@8.71.1':
+    resolution: {integrity: sha512-pSKSEK1JJpHs6KiKVtABCE4iJK5d7FLFzDXQNBQ2oRY7LEd3UwOt3TZemTgu9syTIf56dJWlTn/pdmrO9oKUXQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       typescript: '>=4.8.4 <6.1.0'
-
-  '@typescript-eslint/visitor-keys@8.59.0':
-    resolution: {integrity: sha512-/uejZt4dSere1bx12WLlPfv8GktzcaDtuJ7s42/HEZ5zGj9oxRaD4bj7qwSunXkf+pbAhFt2zjpHYUiT5lHf0Q==}
-    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
   '@typescript-eslint/visitor-keys@8.71.1':
     resolution: {integrity: sha512-0GxiUGqMU0qXJt58cBsiG3DP8lUmBaFo2vChtUX+CT7PnR3v/VGLLrzVP4K9r1lNiZXjHYefMBbPunplr09v6w==}
@@ -3532,6 +3532,15 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  '@markuplint/html-parser@5.2.0':
+    dependencies:
+      '@markuplint/ml-ast': 5.1.1
+      '@markuplint/parser-utils': 5.2.0
+      parse5: 8.0.1
+      type-fest: 5.10.0
+    transitivePeerDependencies:
+      - supports-color
+
   '@markuplint/html-spec@5.1.1':
     dependencies:
       '@markuplint/ml-spec': 5.1.1
@@ -3540,13 +3549,13 @@ snapshots:
 
   '@markuplint/i18n@5.1.1': {}
 
-  '@markuplint/jsx-parser@5.1.1(typescript@7.0.2)':
+  '@markuplint/jsx-parser@5.2.0(typescript@7.0.2)':
     dependencies:
-      '@markuplint/html-parser': 5.1.1
+      '@markuplint/html-parser': 5.2.0
       '@markuplint/ml-ast': 5.1.1
-      '@markuplint/parser-utils': 5.1.1
-      '@typescript-eslint/types': 8.59.0
-      '@typescript-eslint/typescript-estree': 8.59.0(typescript@7.0.2)
+      '@markuplint/parser-utils': 5.2.0
+      '@typescript-eslint/types': 8.71.1
+      '@typescript-eslint/typescript-estree': 8.71.1(typescript@7.0.2)
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -3612,6 +3621,18 @@ snapshots:
       debug: 4.4.3
       espree: 11.2.0
       type-fest: 5.6.0
+    transitivePeerDependencies:
+      - supports-color
+
+  '@markuplint/parser-utils@5.2.0':
+    dependencies:
+      '@markuplint/ml-ast': 5.1.1
+      '@markuplint/ml-spec': 5.2.0
+      '@markuplint/shared': 5.2.0
+      '@markuplint/types': 5.2.0
+      debug: 4.4.3
+      espree: 11.2.0
+      type-fest: 5.10.0
     transitivePeerDependencies:
       - supports-color
 
@@ -3978,10 +3999,10 @@ snapshots:
 
   '@types/unist@3.0.3': {}
 
-  '@typescript-eslint/project-service@8.59.0(typescript@7.0.2)':
+  '@typescript-eslint/project-service@8.71.1(typescript@7.0.2)':
     dependencies:
-      '@typescript-eslint/tsconfig-utils': 8.59.0(typescript@7.0.2)
-      '@typescript-eslint/types': 8.59.0
+      '@typescript-eslint/tsconfig-utils': 8.71.1(typescript@7.0.2)
+      '@typescript-eslint/types': 8.71.1
       debug: 4.4.3
       typescript: 7.0.2
     transitivePeerDependencies:
@@ -3993,21 +4014,18 @@ snapshots:
       '@typescript-eslint/visitor-keys': 8.71.1
     optional: true
 
-  '@typescript-eslint/tsconfig-utils@8.59.0(typescript@7.0.2)':
+  '@typescript-eslint/tsconfig-utils@8.71.1(typescript@7.0.2)':
     dependencies:
       typescript: 7.0.2
 
-  '@typescript-eslint/types@8.59.0': {}
+  '@typescript-eslint/types@8.71.1': {}
 
-  '@typescript-eslint/types@8.71.1':
-    optional: true
-
-  '@typescript-eslint/typescript-estree@8.59.0(typescript@7.0.2)':
+  '@typescript-eslint/typescript-estree@8.71.1(typescript@7.0.2)':
     dependencies:
-      '@typescript-eslint/project-service': 8.59.0(typescript@7.0.2)
-      '@typescript-eslint/tsconfig-utils': 8.59.0(typescript@7.0.2)
-      '@typescript-eslint/types': 8.59.0
-      '@typescript-eslint/visitor-keys': 8.59.0
+      '@typescript-eslint/project-service': 8.71.1(typescript@7.0.2)
+      '@typescript-eslint/tsconfig-utils': 8.71.1(typescript@7.0.2)
+      '@typescript-eslint/types': 8.71.1
+      '@typescript-eslint/visitor-keys': 8.71.1
       debug: 4.4.3
       minimatch: 10.2.6
       semver: 7.8.5
@@ -4017,16 +4035,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@typescript-eslint/visitor-keys@8.59.0':
-    dependencies:
-      '@typescript-eslint/types': 8.59.0
-      eslint-visitor-keys: 5.0.1
-
   '@typescript-eslint/visitor-keys@8.71.1':
     dependencies:
       '@typescript-eslint/types': 8.71.1
       eslint-visitor-keys: 5.0.1
-    optional: true
 
   '@typescript/typescript-aix-ppc64@7.0.2':
     optional: true
