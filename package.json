@@ -32,7 +32,7 @@
     "@markuplint/react-spec": "5.2.0",
     "@playwright/test": "^1.64.1",
     "markuplint": "5.2.0",
-    "npm-run-all2": "9.0.3"
+    "npm-run-all2": "9.0.4"
   },
   "engines": {
     "node": ">=22.23.4"
