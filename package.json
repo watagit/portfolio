@@ -30,7 +30,7 @@
     "@biomejs/biome": "2.6.5",
     "@markuplint/jsx-parser": "5.4.0",
     "@markuplint/react-spec": "5.4.0",
-    "@playwright/test": "^1.64.1",
+    "@playwright/test": "^1.65.0",
     "markuplint": "5.4.0",
     "npm-run-all2": "9.0.4"
   },
