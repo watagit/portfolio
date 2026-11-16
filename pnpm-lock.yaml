@@ -198,8 +198,8 @@ importers:
         specifier: 5.6.1
         version: 5.6.1(typescript@7.0.2)
       '@markuplint/react-spec':
-        specifier: 5.4.0
-        version: 5.4.0
+        specifier: 5.6.1
+        version: 5.6.1
       '@playwright/test':
         specifier: ^1.65.1
         version: 1.65.1
@@ -917,8 +917,8 @@ packages:
     engines: {node: '>=24'}
     hasBin: true
 
-  '@markuplint/react-spec@5.4.0':
-    resolution: {integrity: sha512-SUbykqqsqM3GacFWn+Ug5gq8F+qo68Pe7dE8DDgQLCJGurPYh6nuTVGV5zdpJSdzhntoh0eSHy9GBhQqDHS+zw==}
+  '@markuplint/react-spec@5.6.1':
+    resolution: {integrity: sha512-GAn+K5t8NNr5LtntcfzSHQUOmNKB3JK96eq37lodJuKppXT6mjS4VgqnWk/EIAC7vhJkqO+pFtiZFl2CgvYE4w==}
     engines: {node: '>=24'}
 
   '@markuplint/rules@5.4.0':
@@ -4088,9 +4088,9 @@ snapshots:
       - eslint
       - supports-color
 
-  '@markuplint/react-spec@5.4.0':
+  '@markuplint/react-spec@5.6.1':
     dependencies:
-      '@markuplint/ml-spec': 5.4.0
+      '@markuplint/ml-spec': 5.6.1
     transitivePeerDependencies:
       - supports-color
 
