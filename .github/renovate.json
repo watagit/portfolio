@@ -1,10 +1,16 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:recommended"],
+  "extends": ["config:recommended", "helpers:pinGitHubActionDigests"],
   "rangeStrategy": "bump",
+  "minimumReleaseAge": "3 days",
   "automerge": true,
   "platformAutomerge": true,
   "packageRules": [
+    {
+      "description": "Require manual review for major updates",
+      "matchUpdateTypes": ["major"],
+      "automerge": false
+    },
     {
       "description": "Pin Node.js to v22 until Vercel supports v24",
       "matchDatasources": ["node-version"],
