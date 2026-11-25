@@ -198,8 +198,8 @@ importers:
         specifier: ^6.14.0
         version: 6.14.0(@types/node@22.20.5)
       '@argos-ci/playwright':
-        specifier: ^7.10.0
-        version: 7.10.0(@types/node@22.20.5)
+        specifier: ^7.10.2
+        version: 7.10.2(@types/node@22.20.5)
       '@biomejs/biome':
         specifier: 2.6.8
         version: 2.6.8
@@ -221,12 +221,12 @@ importers:
 
 packages:
 
-  '@argos-ci/api-client@0.33.0':
-    resolution: {integrity: sha512-gy19k0kAlTw2/6fb9Z5+MWVkNcW4Xjct2JWxQLnuzL0nvu/NJxvgw5AHDDqnQq+YibcnJD/joej4O3uN4d9efg==}
-    engines: {node: '>=22.0.0'}
-
   '@argos-ci/api-client@0.34.0':
     resolution: {integrity: sha512-smJJJnopYPdqQip2lptsTm851pqz1XiKXYS1QroOmmDG3NpoUvNHkPKuKaZ9qDQDreLdUQ98L4bZAfiX2kIYCg==}
+    engines: {node: '>=22.0.0'}
+
+  '@argos-ci/api-client@0.35.0':
+    resolution: {integrity: sha512-Gtb5P3sKXuTsJ2B8A7sK6GFZCFAavU5LFZUmNUiI77/RdB16tWbHQehpwVa8Av97NFOY6JdqXZOOs+Pi60mKMQ==}
     engines: {node: '>=22.0.0'}
 
   '@argos-ci/browser@6.6.1':
@@ -238,16 +238,16 @@ packages:
     engines: {node: '>=22.0.0'}
     hasBin: true
 
-  '@argos-ci/core@6.9.1':
-    resolution: {integrity: sha512-SpCpiCnlRHPmIsYMn9sHke9xrP/hLMtmbEhpZdsjk+2gOAAnMNGKaHOAlcElRNbxRfWYL9LB1czheaBNSW8Vrg==}
-    engines: {node: '>=22.0.0'}
-
   '@argos-ci/core@6.9.2':
     resolution: {integrity: sha512-5BKh3kpPLW5fIyP7RI9eRwKL4dO11pDpynEIZQxwH+SnQK6ej7nSQZBnXqRtBTy6zYlQ4G7LMOHnxc5n+vSvOw==}
     engines: {node: '>=22.0.0'}
 
-  '@argos-ci/playwright@7.10.0':
-    resolution: {integrity: sha512-THtugkCx2u6G6nqyP0fbb4VILKMVWlGnjFQwgnMyqWxfwM76Fy7IVHRYUk0mo9M01D5YQxczCT0rO86fcZzH2w==}
+  '@argos-ci/core@6.9.3':
+    resolution: {integrity: sha512-ZZWsk0kbGVEfOscqheMp+fc2xEShNN0c5zfwVluKZ6LrWHgA5rCr18806PEhc827tsxgeLZrcYWZi3yiJ5sP1g==}
+    engines: {node: '>=22.0.0'}
+
+  '@argos-ci/playwright@7.10.2':
+    resolution: {integrity: sha512-zJqPlSY9GbmYMIM6LVgBN0LbiFWrVlpzlgDqaSKaU5FfQiqS+q/wRgPaqvXSTFFFvSeY+2R4vSarevG93PzmGw==}
     engines: {node: '>=22.0.0'}
 
   '@argos-ci/util@4.4.0':
@@ -3279,7 +3279,7 @@ packages:
 
 snapshots:
 
-  '@argos-ci/api-client@0.33.0':
+  '@argos-ci/api-client@0.34.0':
     dependencies:
       debug: 4.4.3
       openapi-fetch: 0.17.0
@@ -3287,7 +3287,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@argos-ci/api-client@0.34.0':
+  '@argos-ci/api-client@0.35.0':
     dependencies:
       debug: 4.4.3
       openapi-fetch: 0.17.0
@@ -3309,21 +3309,6 @@ snapshots:
       - '@types/node'
       - supports-color
 
-  '@argos-ci/core@6.9.1(@types/node@22.20.5)':
-    dependencies:
-      '@argos-ci/api-client': 0.33.0
-      '@argos-ci/util': 4.4.0
-      convict: 6.2.5
-      debug: 4.4.3
-      fast-glob: 3.3.3
-      mime-types: 3.0.2
-      p-retry: 8.0.1
-      sharp: 0.35.5(@types/node@22.20.5)
-      tmp: 0.2.7
-    transitivePeerDependencies:
-      - '@types/node'
-      - supports-color
-
   '@argos-ci/core@6.9.2(@types/node@22.20.5)':
     dependencies:
       '@argos-ci/api-client': 0.34.0
@@ -3339,10 +3324,25 @@ snapshots:
       - '@types/node'
       - supports-color
 
-  '@argos-ci/playwright@7.10.0(@types/node@22.20.5)':
+  '@argos-ci/core@6.9.3(@types/node@22.20.5)':
+    dependencies:
+      '@argos-ci/api-client': 0.35.0
+      '@argos-ci/util': 4.4.0
+      convict: 6.2.5
+      debug: 4.4.3
+      fast-glob: 3.3.3
+      mime-types: 3.0.2
+      p-retry: 8.0.1
+      sharp: 0.35.5(@types/node@22.20.5)
+      tmp: 0.2.7
+    transitivePeerDependencies:
+      - '@types/node'
+      - supports-color
+
+  '@argos-ci/playwright@7.10.2(@types/node@22.20.5)':
     dependencies:
       '@argos-ci/browser': 6.6.1
-      '@argos-ci/core': 6.9.1(@types/node@22.20.5)
+      '@argos-ci/core': 6.9.3(@types/node@22.20.5)
       '@argos-ci/util': 4.4.0
       chalk: 6.0.1
       debug: 4.4.3
